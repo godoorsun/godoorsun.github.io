@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Social Flow 1.0</title>
+  <link href="../css/jquery-ui-smoothness.css" rel="stylesheet">
+  <link href="../css/mystyle.css" rel="stylesheet">
+  <link href="../css/jquery.dynatable.css" rel="stylesheet">
+  <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="../libs/d3.min.js"></script>
+  <script src="../libs/jquery-1.11.2.min.js"></script>
+  <script src="../libs/jquery-ui.min.js"></script>
+  <script src="../libs/d3-ForceEdgeBundling.js"></script>
+  <script src="../libs/colorbrewer.js"></script>
+  <script src="../libs/d3.layout.cloud.js"></script>
+  <script src="../libs/d3.layout.cloud.js"></script>
+  <script src="../libs/jquery.dynatable.js"></script>
+  <script src="../libs/json-to-table.js"></script>
+
+<style type="text/css">
+  
+
+
+
+
+</style>
+
+  <!-- <script src="../libs/bootstrap.min.js"></script>  -->
+
+</head>
+
+<body>
+
+    <div style="width:100%; float: left;">
+          <div style="width:13%; float: left;">
+               <div id = "parameters" style="font-size:10px; height: 600px;">
+                    <div id="tabs" style="width: 93%">
+                      <ul>
+                        <li><a href="#tabs-2">Hashtags</a></li>
+                        <li><a href="#tabs-1">Parameters</a></li>
+                        
+                      </ul>
+                      <div id="tabs-1" style="height: 600px;">
+                        <div>
+                          <p>
+                            Select time:
+                            <input type="text" id="time_of_interest_value" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="time_of_interest_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Ratio:</label> 
+                            <input type="text" id="ratio_value" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="ratio_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Node Scale:</label> 
+                            <input type="text" id="node_scale_value" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="node_scale_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Edge Scale:</label> 
+                            <input type="text" id="edge_scale_value" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="edge_scale_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Iteration:</label> 
+                            <input type="text" id="iters_value" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="iters_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Neighbour Threshold:</label> 
+                            <input type="text" id="neighbourThreshold_value" readonly style="width: 10%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="neighbourThreshold_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label># of Edges:</label> 
+                            <input type="text" id="edge_number_value" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="edge_number_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Step Size:</label> 
+                            <input type="text" id="step_size" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="step_size_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Compatibility:</label> 
+                            <input type="text" id="compatibility" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="compatibility_slider" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Step Size_local:</label> 
+                            <input type="text" id="step_size_local" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="step_size_slider_local" class = "p_slider" ></div>
+
+                          <p>
+                            <label>Compatibility_local:</label> 
+                            <input type="text" id="compatibility_local" readonly style="width: 30%; border:0; color:#f6931f; font-weight:bold;">
+                          </p>
+                          <div id="compatibility_slider_local" class = "p_slider" ></div>
+
+
+                        </div>
+                      </div>
+                      <div id="tabs-2" style=" height: 600px; overflow: auto">
+                        <ol id="selectable">
+                        </ol>
+                      </div>
+                    </div>
+               </div>
+
+          <!--
+          <div id="tweet_tab" style="width: 93%; font-size:10px; ">
+            <ul>
+              <li><a href="#tweet_tab-1">Tweets</a></li>
+            </ul>
+            <div id = "tweet_tab_1" style = "height:100px;"> </div>
+          </div>
+          -->
+          </div>
+
+          
+
+          <div id="mainvis_tab" style="float: left; font-size:10px; width:64%;">
+            <ul>
+              <li><button id = "OK" style="margin-top: 1px;">Layout</button></li>
+              <li><button id = "SnapShot" style="margin-top: 1px;">SnapShot</button></li>
+              <li><a href="#mainvis">SocialFlow</a></li>
+            </ul>
+            <div id = "mainvis" style="width:100%; float: left; height: 624px;  padding: 0px;">
+            </div>
+          </div>
+
+          <div id="countryu_tab" style="float: left; margin-left: 10px;font-size:10px; width:21%;">
+              <ul>
+                <!--<li><button id = "filter" style="margin-top: 1px;">Filter</button></li>-->
+                <!-- <li><button id = "disinclude" style="margin-top: 1px;">Disinclude</button></li> -->
+                <li><a href="#smallmultiples" >History</a></li>
+                <!--<li><a href="#Country_tab_1" >Country</a></li>-->
+              </ul>
+              <!--
+              <div id = "Country_tab_1" style="height: 600px; width:93%; float: left; overflow: auto">
+                  <ol id="selectable_country">
+                  </ol>
+              </div>
+              -->
+              <div id = "smallmultiples" style="height: 600px; width:93%; float: left; overflow: auto;">
+                  
+              </div>
+          </div>
+
+    </div>
+
+
+    <!--
+    <div id = "smallmultiples"   class = "row"  style="margin-left: 10px; ">
+        <div id = "smallmultiples"   class = "row"  style="height:0px">
+        </div>
+    </div>
+    -->
+
+
+    <div id="heatmap_tabs" style="margin-top:6px; float: left; font-size:10px; width:99%;  overflow:auto; heigh=350px;">
+      <ul>
+        <li><a href="#Focus">Temporal Vis</a></li>
+        <li><a href="#Tweets">Tweets</a></li><!--
+        <li><a href="#Entropy">Entropy</a></li>
+        <li><a href="#Spread">Spread</a></li> -->
+      </ul>
+      <div id = "Focus" style="height:235px; "></div>
+      <div id = "Tweets" class="datagrid" style="height:235px; overflow:auto;"><!--  overflow:auto; 
+      <div id = "Entropy" style="height:300px; overflow:auto; display:hidden;"></div>
+      <div id = "Spread" style="height:300px; overflow:auto; display:hidden;"></div> -->
+      <table id="Tweets-table">  
+        <thead>
+          <th width="8.8%">User</th>
+          <th width="8.8%">Location</th>
+          <th width="7.8%">#Followers</th>
+          <th width="8.8%">Date</th>
+          <th width="65%">Tweet</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>   
+      </div>
+    </div>
+
+<!-- <button id = "OK">Go</button>  -->
+
+
+<!--<canvas id="canvas" width="3000px" height="1200px"></canvas> -->
+<!-- <div id="png-container"></div>  -->
+
+
+
+</body>
+</html>
+
+<script src="../libs/data.js"></script>
+<script src="../libs/socialflow_graphvis.js"></script>
+<script src="../libs/socialflow_heatmapvis.js"></script>
+<script src="../libs/socialflow_wordcloud.js"></script>
+<script src="../libs/socialflow_tweetview.js"></script>
+<script src="../libs/socialflow_smallmultiples.js"></script>
+<script src="../libs/socialflow.js"></script>
+<script src="../libs/init.js"></script>
+<script src="../libs/reorderedheatmap.js"></script>
