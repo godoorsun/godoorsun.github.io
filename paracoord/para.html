@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Parallel Coordinates of All Data Sources</title>
+		<link rel="stylesheet" type="text/css" href="css/d3.parcoords.css">
+		<link rel="stylesheet" type="text/css" href="css/para.css">
+	</head>
+	<body>
+		<div>
+			<a href="ParallelCoordinatesUsage.html">Usage instructions</a>
+		</div>
+		<div id="div" style="height:50px">
+			<div id="select_div" style="float:left">
+				<select id="result">
+					<option value="">--results--</option>
+				</select>
+			</div>
+			<div id="null_div" style="float:left">
+				<label>showNULL<input type="checkbox" id="null_checkbox" ></input></label>
+			</div>
+			<div style="float:left">
+				&nbsp;&nbsp;curve smoothness:
+				<input type="range" min="0" max="0.25" value="0.0" step="0.01" id="smoothness"/>
+				<strong id="smooth">0.00</strong>
+			</div>
+			<div style="float:left">
+				&nbsp;&nbsp;bundling strength:
+				<input type="range" min="0" max="1" value="0" step="0.05" id="bundling"/>
+				<strong id="strength">0.00</strong>
+			</div>
+			<div style="float:left">
+				&nbsp;&nbsp;
+				<select id="bundleDimension"></select>
+			</div>
+		</div>
+		<div id="checkbox_div"></div>
+		<div id="example0" class="parcoords" style="height:800px"></div>
+		
+		<script src="para/d3.js"></script>
+	    <script src="para/sylvester.js"></script>
+	   	<script src="para/d3.tip.js"></script>
+	   	<script src="para/jquery-1.9.1.js"></script>
+		<script src="para/d3.parcoords.js"></script>
+		<script src="para/para.js"></script>
+	</body>
+</html>
