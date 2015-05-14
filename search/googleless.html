@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="en-gb">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+ 
+
+    <script type="text/javascript">
+
+
+    var _Google = "Google";
+    var _StackOverFlow = "StackOverFlow";
+    var _Google_Groups = "Google Groups";
+    var _Ohloh = "Ohloh";
+    var _Github = "Github";
+    var _Google_Code = "Google Code";
+    var _Sourceforge = "Sourceforge";
+    var _Quora = "Quora";
+    var _zhihu = "zhihu";
+    var _Wikipedia = "Wikipedia";
+    var _Delicious = "Delicious";
+    var _Google_Image = "Google Image";
+    var _Flickr = "Flickr";
+    var _Pinterest = "Pinterest";
+    var _Weibo = "Weibo";
+    var _Twitter = "Twitter";
+    var _Mac = "Mac";
+    var _Etao = "Etao";
+    
+    
+    
+	var map = new Object();
+
+
+	var nullArray = new Array();
+    var generalArray = new Array(_Google);
+    var techniqueArray = new Array(_StackOverFlow, _Google_Groups); 
+    var sourceArray = new Array(_Ohloh, _Github, _Google_Code, _Sourceforge); 
+    var knowledgeArray = new Array(_Quora, _zhihu);
+    var imageArray = new Array(_Pinterest, _Google_Image, _Flickr);
+    var snsArray = new Array(_Weibo, _Twitter);
+
+    
+
+
+        var numWindows = 0;
+
+
+    function submit(){
+        var searchpara = document.getElementById("searchfield").value;
+        //
+
+        var parameters = "scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=1024,height=768,left = 200,top = 200";
+
+	    var boxes = document.getElementsByName("engine");
+	    for(var i = 0; i < boxes.length; i++){
+		    if(boxes[i].checked == true){
+			    //map[boxes[i].id] = boxes[i].value;
+			  var googlesearch = boxes[i].value.replace("#$#",searchpara);
+     numWindows += 1;
+    var title = "Window #"+numWindows;
+			  var a = window.open(googlesearch);
+
+		    }
+		}
+
+    }
+
+
+    function runScript(e) {
+	    if (e.keyCode == 13) {
+	    	submit();
+	        return false;
+	    }
+    }
+    
+
+
+	function updateCheckboies(categoryArray){
+	
+		console.debug(categoryArray[0]);
+		
+	    var boxes = document.getElementsByName("engine");
+	    for(var i = 0; i < boxes.length; i++){
+	    	boxes[i].checked = false;
+	    	
+	    	
+	    	for(var j = 0; j <categoryArray.length; j++){
+		    	if(categoryArray[j] == boxes[i].id)
+		    	 boxes[i].checked = true;
+
+	    	}	    	
+	    }
+	}
+    
+    
+
+    
+    
+    </script>
+
+    <title>Google Less Search</title>
+</head>
+
+<body>
+		<h1>&nbsp;Less Google Search</h1>
+        
+    
+	 <div class="wrapper">
+	 
+	 
+	         <table >
+            <tr>
+                <td><input type="text" name="q" size="25" maxlength="255"
+                value="" id="searchfield" onkeypress="runScript(event)">
+                <input type="submit" value="Search" onclick=
+                "submit()"></td>
+            </tr>
+        </table>
+	 
+	 
+	 <br>
+    
+     <div class="radio">      
+	 <input type="radio" id= "Null" name="category" onclick="updateCheckboies(nullArray);" value="Null"> <label for="Null">Null</label>
+	 <input type="radio" id= "Knowledge" name="category" onclick="updateCheckboies(knowledgeArray);" value="Knowledge"><label for="Knowledge">Q&A</label>
+	 <input type="radio" id= "Technique" name="category" onclick="updateCheckboies(techniqueArray);" value="Technique"><label for="Technique">Technique</label>
+	 <input type="radio" id= "Open_Source" name="category" onclick="updateCheckboies(sourceArray);" value="Source"><label for="Open_Source">Open Source</label>
+	 <input type="radio" id= "Image" name="category" onclick="updateCheckboies(imageArray);" value="Image"><label for="Image">Image</label>
+	 <input type="radio" id= "SNS" name="category" onclick="updateCheckboies(snsArray);" value="SNS"><label for="SNS">SNS</label>
+     </div>
+	 <hr style="border-top: dotted 1px;"  width="680px" align ="left"/> 
+	 
+	 <div class="checkbox"> 
+	 
+	 
+	 <input type="checkbox" id = "Google" name="engine" value="http://www.google.com/search?q=#$#"><label for="Google">Google</label> 
+	 <br>
+	 
+	 
+	 <input type="checkbox" id = "Quora" name="engine" value="http://www.quora.com/search?q=#$#"><label for="Quora">Quora</label>
+	 <input type="checkbox" id = "zhihu" name="engine" value="http://www.zhihu.com/search?q=#$#&type=question"><label for="zhihu">zhihu(知乎)</label>
+	 <br>
+	 
+	 <input type="checkbox" id = "StackOverFlow" name="engine" value="http://stackoverflow.com/search?q=#$#"><label for="StackOverFlow">StackOverFlow</label> 
+	 <input type="checkbox" id = "Google Groups" name="engine" value="https://groups.google.com/forum/#!search/#$#"><label for="Google Groups">Google Groups</label> 
+	 <br>
+	 
+	 <input type="checkbox" id = "Github" name="engine" value="https://github.com/search?q=#$#&ref=cmdform"><label for="Github">Github</label>
+	 <input type="checkbox" id = "Google Code" name="engine" value="https://code.google.com/query/#q=#$#"><label for="Google Code">Google Code</label>
+	 <input type="checkbox" id = "Sourceforge" name="engine" value="http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=#$#"><label for="Sourceforge">Sourceforge</label>
+	 <input type="checkbox" id = "Ohloh" name="engine" value="http://www.ohloh.net/p?ref=homepage&q=#$#"><label for="Ohloh">Ohloh</label>
+	 <br>
+	 <input type="checkbox" id = "Pinterest" name="engine" value="http://www.pinterest.com/search/pins/?q=#$#"><label for="Pinterest"><mark>Pinterest</mark></label>
+	 <input type="checkbox" id = "Google Image" name="engine" value="https://www.google.com/search?newwindow=1&hl=en&site=imghp&tbm=isch&source=hp&q=#$#"><label for="Google Image">Google Image</label>
+	 <input type="checkbox" id = "Flickr" name="engine" value="http://www.flickr.com/search/?q=#$#"><label for="Flickr">Flickr</label>
+	 <br>
+	 <input type="checkbox" id = "Twitter" name="engine" value="https://twitter.com/search?q=#$#&src=typd"><label for="Twitter">Twitter</label>
+	 <input type="checkbox" id = "Weibo" name="engine" value="http://s.weibo.com/weibo/#$#?topnav=1&wvr=5&b=1"><label for="Weibo">Weibo(微博)</label>
+	 <br>
+
+
+<br> 
+<br>
+<br>
+
+Others:
+	 <hr style="border-top: dotted 1px;"  width="680px" align ="left"/>
+	 <input type="checkbox" id = "Wikipedia" name="engine" value="http://en.wikipedia.org/wiki/#$#"><label for="Wikipedia">Wikipedia</label>
+	 <br>
+
+	 <input type="checkbox" id = "Delicious" name="engine" value="https://delicious.com/discover?p=#$#"><label for="Delicious"><mark>Delicious</mark></label>
+	 <br>
+
+	 
+	 <input type="checkbox" id = "Etao" name="engine" value="http://s.etao.com/search?q=#$#"><label for="Etao">Etao(一�?</label>
+   <br>
+     
+	 <input type="checkbox" id = "Google Translate" name="engine" value="http://translate.google.com/#zh-CN/en/#$#"><label for="Google Translate">Google Translate</label>
+     <br>
+	 <input type="checkbox" id = "moreofit" name="engine" value="http://www.moreofit.com/search/?q=#$#"><label for="moreofit">moreofit</label>
+     <br>     
+     
+	 </div><br>
+	 
+	 
+	 More to be continued.
+     <hr width="680px" align ="left"/> 
+     <br>
+     <br>
+     Hint: to open new pages on tabs for Chrome, please hold <rnkey>ctrl</rnkey>(maybe <rnkey>alt</rnkey>, <rnkey>command</rnkey>) when you click "Search"
+     
+     </div> 
+
+
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9903746; 
+var sc_invisible=1; 
+var sc_security="028fc097"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9903746/0/028fc097/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

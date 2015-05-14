@@ -1,14 +1,262 @@
-
 <!DOCTYPE html>
+
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>TBA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js" type=
+    "text/javascript">
+</script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
 
+    <title>Guodao Sun | Homepage</title>
+    <script type="text/javascript">
 
+    var offset = -50;
+    $(document).ready(function() {
+    }); 
+
+    function disableHighlight(){
+    $('.category').removeClass('highlightedCategory'); 
+    }
+    </script>
 </head>
 
 <body>
-Under Construction.
+    <div class="navbar">
+        <!--
+        <div class="nav-profile">
+            Guodao Sun
+        </div>
+
+        -->
+
+        <div class="nav-item nav-item-home category highlightedCategory"
+        onclick=
+        "disableHighlight(); $('.nav-item-home').addClass('highlightedCategory');document.getElementById('bio').scrollIntoView(); scrollBy(0, offset);">
+        About
+        </div><!--
+        <div class="nav-item nav-item-research category" onclick=
+        "disableHighlight(); $('.nav-item-research').addClass('highlightedCategory'); window.location.href='Research.htm'">
+        Research
+        </div>
+        -->
+
+        <div class="nav-item category nav-item-pub " onclick=
+        "disableHighlight(); $('.nav-item-pub').addClass('highlightedCategory'); document.getElementById('publication').scrollIntoView(); scrollBy(0, offset);">
+        Publications
+        </div>
+
+        <div class="nav-item category nav-item-cv" onclick=
+        "disableHighlight(); $('.nav-item-cv').addClass('highlightedCategory');">
+        CV
+        </div>
+
+<!--
+        <div class="nav-item category nav-item-gallery" onclick=
+        "disableHighlight(); $('.nav-item-gallery').addClass('highlightedCategory'); window.location.href='gallery.html'">
+        Gallery
+        </div>
+-->
+        <div class="nav-item category nav-item-Misc" onclick=
+        "disableHighlight(); $('.nav-item-Misc').addClass('highlightedCategory'); window.location.href='misc.html'">
+        Misc
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div>
+            <div style="font-size:20px; text-align:left">
+                Guodao Sun（孙国道） godoor.sun [at] gmail.com
+            </div>
+        </div>
+
+        <div class="portrait"><img src="images/guodao.png" width="220px"
+        height="339px"> <img src="images/vis_of_my_papers.jpg" width="748px"
+        height="322px" style="margin-top:1px" alt="Word cloud of my papers" title="Word cloud of my papers" ></div>
+
+        <div class="bio">
+            <div id="bio" style="font-size:28px;">
+                <h4 class = "item"  >Short Bio:</h4>
+            </div>
+            <div style="font-size:20px; -webkit-font-smoothing: antialiased;">
+                I'm currently a Ph.D candidate at College of Information
+                Engineering, <a href="http://www.zjut.edu.cn">Zhejiang
+                University of Technology</a>, Hangzhou, China. I'm now under
+                the supervision of Prof. <a href=
+                "http://www.tdc.zjut.edu.cn/UTADB/teacher/search_one_intro.jsp?teacher_id=03412">
+                Ronghua Liang</a>. During my Ph.D study, I worked as a research
+                intern at Department of Computer Science and Engineering,
+                <a href="http://www.ust.hk">Hong Kong University of Science and
+                Technology</a> under the supervisor of Prof. <a href=
+                "http://www.huamin.org">Huamin Qu</a> from February 2013 to
+                July 2013. After that, I went to Internet Graphics Group,
+                <a href="http://www.msra.cn/zh-cn/default.aspx">Microsoft
+                Research Asia</a> to continue my research on visualization with
+                my mentor <a href=
+                "http://research.microsoft.com/en-us/um/people/ycwu/index.html">
+                Yingcai Wu</a> until now. I received my Bachelor's degree in
+                Compute Science and Technology with second major in Automation
+                from Zhejiang University of Technology in 2010.
+            </div>
+            
+           <div id="Research_Interest" style="font-size:28px;">
+                <h4 class = "item" >Research Interest:</h4>
+                <div style="font-size:20px;">
+                     At present, I'm interested in exploring large data using interactive <a href="http://en.wikipedia.org/wiki/Visual_analytics">visual analytics</a>.
+                </div>
+           </div>
+
+
+            <div id="publication" style="font-size:28px;">
+                <h4 class = "item">Publications:</h4>
+                <table align="center" cellspacing="50">
+                    <tr>
+                        <td><img src="images/coop.jpg" width="230" height=
+                        "150"></td>
+
+                        <td>
+                            <div class="title">
+                                <a>EvoRiver: Visual Analysis of Topic Coopetition on Social Media</a>
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Yingcai Wu, Taiquan Peng,
+                                Jianhua Zhu, Ronghua Liang, and Shixia Liu
+                            </div>
+
+                            <div class="venue">
+                                IEEE Transactions on Visualization and Computer Graphics, 20(12), 2014 
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/embed2.jpg" width="230" height=
+                        "150"></td>
+
+                        <td>
+                            <div class="title">
+                                <a>Embedding Temporal Display into Maps for
+                                Occlusion-Free Visualization of Spatio-temporal
+                                Data</a>
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Yang Liu, Wenbin Wu, Ronghua
+                                Liang, and Huamin Qu
+                            </div>
+
+                            <div class="venue">
+                                In Proceeding of IEEE Pacific Visualization
+                                Symposium, pages 185-192, 2014
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/vasurvey.jpg" width="230" height=
+                        "150"></td>
+
+                        <td>
+                            <div class="title">
+                                <a>A Survey of Visual Analytics Techniques and
+                                Applications: State-of-the-Art Research and
+                                Future Challenges</a>
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Yingcai Wu, Ronghua Liang,
+                                and Shixia Liu
+                            </div>
+
+                            <div class="venue">
+                                Journal of Computer Science and Technology
+                                28(5):852-867, 2013
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/realestate.jpg" width="230"
+                        height="150"></td>
+
+                        <td>
+                            <div class="title">
+                                <a>A Web-based Visual Analytics System for Real
+                                Estate Data</a>
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Ronghua Liang, Fuli Wu, and
+                                Huamin Qu
+                            </div>
+
+                            <div class="venue">
+                                SCIENCE CHINA Information Sciences 56(5):1-13,
+                                2013
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/featureenhance.jpg" width="230"
+                        height="130"></td>
+
+                        <td>
+                            <div class="title">
+                                <a>Survey on Feature Enhanced Volume
+                                Visualization</a>
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Weiming Li, Wenjie Sun,
+                                Xiangyin Ma, and Ronghua Liang
+                            </div>
+
+                            <div class="venue">
+                                Journal of Computer Aided Design＆ Computer
+                                Graphics 25(11):1606-1613, 2013
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            
+           <div id="Professional_Activities:" style="font-size:28px;">
+                <h4  class = "item" >Professional Activities:</h4>
+                <div style="font-size:20px;">
+                <ul style="margin-left:35px">
+                <li>
+	                Program Committee for <a href="http://vinci-conf.org/">VINCI'14</a> (Sydeny), <a href="http://vis.pku.edu.cn/wiki/conferences/chinava2014/en">ChinaVA </a> (Beijing)              
+                </li>
+                </ul>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+    
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9903746; 
+var sc_invisible=1; 
+var sc_security="028fc097"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9903746/0/028fc097/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
 </body>
 </html>
-
