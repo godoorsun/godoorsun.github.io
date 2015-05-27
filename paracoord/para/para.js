@@ -1,18 +1,24 @@
 var showNULL = false,
-    nullValues = [];
+    nullValues = {},
+    minValues = {},
+    maxValues = {},
+    ranges = {};
+//    minValues = 
 (function () {
-	var ranges = [],
-	    resultNames = [],
+	var resultNames = [],
 	    reasonNames = [],
 	    dataObj = {},
 	    currentData = {},
 	    pc0 = null,
 	    currentResult = "";
-	    
+	var tickValuesObj = {};  
 	d3.csv('data/ranges.csv', function (rs) {//get ranges for each data source
 	    rs.forEach(function (d) {
 	        ranges[d["name"]] = [+d["min"], +d["max"]];
-	        nullValues[[d["name"]]] = +d["max"] + 1;
+	        maxValues[d["name"]] = +d["max"] + 1;
+	        nullValues[d["name"]] = +d["max"] + 2;
+	        minValues[d["name"]] = +d["min"] - 1;
+	        
 	    });
 	    
 	    d3.csv('data/result3.csv', function (ds) {
@@ -180,7 +186,8 @@ var showNULL = false,
 	        m = [80, 80, 200, 80],
 	        w = window.innerWidth - m[1] - m[3],
 	        h = 800 - m[0] - m[2],
-	        h1 = 20,
+	        h1 = 30,
+//	        h2 = 20,
 	        imageWidth = 8;
 		function computeTraits() {
 			traits = [];//set the traits to empty
@@ -197,50 +204,116 @@ var showNULL = false,
 			
 		}
 		function computeYScales() {
+			tickValuesObj = {};
+			d3.select("#example0").append('svg')
+			   .attr("width", 300)
+			   .attr("height", 800);
+			
 			traits.forEach(function (d, i) {//compute yscale of all reasons and current result
 			    var domain = [],//domain of yscale
 			        range = [],//range of yscale
-			        notNull = [],
-			        min,
-			        max;
-			    
+			        notNull = [];
 				notNull = currentData.filter(function (p) {//filter null value and compute the max value of the dimension
 					return p["max " + d] <= ranges[d][1];
 				});
-				
-				min = d3.min(currentData, function (p) {//compute the min value of the dimension
+				//!!! notNull.length 可能等于0
+				var min = d3.min(notNull, function (p) {
 					return p["min " + d];
 				});
-				
-				//compute the domain and ranges for each axis scale
-				domain.push(ranges[d][0]);
-				range.push(h);
-				if(notNull.length != 0) {
-				    max = d3.max(notNull, function (p) {
-				    	return p["max " + d];
-				    });
-							  
-					if(min > ranges[d][0]) {
-					    domain.push(min);
-						range.push(h1 + 9 * (h - h1) / 10);
-					}
-					
-					if(max > min) {
-						domain.push(max);
-						range.push(h1 + (h - h1) / 10);
-					}
+				var max = d3.max(notNull, function (p) {
+					return p["max " + d];
+				});
+				if(min == undefined) {
+					min = max = ranges[d][0];
 				}
-				domain.push(ranges[d][1]);
-				range.push(h1);
-				domain.push(nullValues[d]);
-				range.push(0);
-				    	   
+				domain = [minValues[d], min, max, maxValues[d], nullValues[d]];
+//				range = [h, h1 + 9 * (h - h1) / 10, h1 + (h - h1) / 10, h1, 0];
+				range = [h, h - h1, 2 * h1, h1, 0];
 				y[d] = d3.scale.linear()//set the yscale of each dimension
-				               .domain(domain)
-				               .range(range);
+	               .domain(domain)
+	               .range(range);
+				
+//			        min,
+//			        max;
+//			    var tickRange = []
+//                    tickDomain = [];
+//			    
+//				notNull = currentData.filter(function (p) {//filter null value and compute the max value of the dimension
+//					return p["max " + d] <= ranges[d][1];
+//				});
+//				
+//				min = d3.min(currentData, function (p) {//compute the min value of the dimension
+//					return p["min " + d];
+//				});
+//				
+//				//compute the domain and ranges for each axis scale
+//				domain.push(ranges[d][0]);
+//				range.push(h);
+//				
+//				tickDomain[0] = ranges[d][0];
+//				tickRange[0] = h;
+//				
+//				if(notNull.length != 0) {
+//				    max = d3.max(notNull, function (p) {
+//				    	return p["max " + d];
+//				    });
+//							  
+//					if(min > ranges[d][0]) {
+//						tickDomain[0] = min;
+//						tickRange[0] = h1 + 9 * (h - h1) / 10;
+//					    domain.push(min);
+//						range.push(h1 + 9 * (h - h1) / 10);
+//					}
+//					
+//					if(max > min) {
+//						tickDomain[1] = max;
+//						tickRange[1] = h1 + (h - h1) / 10;
+//						
+//						domain.push(max);
+//						range.push(h1 + (h - h1) / 10);
+//					}
+//				}
+//				domain.push(ranges[d][1]);
+//				range.push(h1);
+//				if(tickDomain[1] == undefined) {
+//					tickDomain[1] = ranges[d][1];
+//					tickRange[1] = h1;
+//				}
+//				domain.push(nullValues[d]);
+//				range.push(0);
+				    	   
+//				y[d] = d3.scale.linear()//set the yscale of each dimension
+//				               .domain(domain)
+//				               .range(range);
+				tickValuesObj[d] = computeTickValues(range, domain);
+				
 	        });
+			d3.select("#example0").select('svg').remove();
 		}
-		
+		function computeTickValues(range, domain) {
+			var scale = d3.scale.linear()
+			                .domain([domain[1], domain[2]])
+			                .range([range[1], range[2]]);
+			var axis = d3.svg.axis()
+		    .scale(scale)
+		    .orient("left")
+		    .ticks(10);
+			var tickValues = [];
+			var k = 0;
+			d3.select('svg').call(axis).selectAll(".tick").each(function(data) {
+				tickValues[k++] = data;
+			});
+			tickValues[0] = domain[1];
+			tickValues[tickValues.length - 1] = domain[2];
+//			if(d[1] != tickValues[tickValues.length - 1]) {
+//				tickValues[k++] = d[1];
+//			}
+//			if(d[0] != tickValues[0]) {
+//				tickValues = [d[0]].concat(tickValues);
+//			}
+			tickValues = [domain[0]].concat(tickValues).concat([domain[3]]);
+			return tickValues;
+		}
 		function computeTypesForPC0() {
 			//instruct types of dimensions,set all to be number
 			traits.forEach(function (d, i) {
@@ -262,7 +335,7 @@ var showNULL = false,
 
 	        pc0 = null;
 		}
-		
+		//function
 		function render() {
 			var tip = d3.tip()//for axis label tip
 						.attr('class', 'd3-tip')
@@ -287,12 +360,19 @@ var showNULL = false,
 			traits.forEach(function (d, i) {//compute yscale of axis
 				pc0.yscale[d] = y[d];
 			});
-		
+//			pc0.tickSize(20);
+//			pc0.tickValues(function (d) {
+//			    var ticks = y[d].domain();
+//				ticks = ticks.slice(0, ticks.length-1);
+//				return ticks;
+//			});
 			pc0.tickValues(function (d) {
-			    var ticks = y[d].domain();
-				ticks = ticks.slice(0, ticks.length-1);
-				return ticks;
+				return tickValuesObj[d];
 			});
+//			pc0.tickFormat(function (d, i) {
+////				return tickValuesObj[d];
+//				console.log();
+//			});
 		
 			pc0.smoothness(smoothnessValue)
 				.bundlingStrength(bundleDimensionValue)
@@ -354,13 +434,25 @@ var showNULL = false,
 			});//register listenter for change
 		};
 		function setImage() {//append image to axis which is already compoted
-		    pc0.svg.selectAll(".dimension")
-				   .append("svg:image")
-				   .attr("x", 1)
-			 	   .attr("y", h1)
-			 	   .attr("width", imageWidth)
-			 	   .attr("height",  h - h1)
-			 	   .attr("xlink:href",function (d) {return "p/p3/" + currentResult+"." + d + ".jpg";});
+//		    pc0.svg.selectAll(".dimension")
+//				   .append("svg:image")
+//				   .attr("x", 1)
+//			 	   .attr("y", h1 + (h - h1) / 10)
+//			 	   .attr("width", imageWidth)
+//			 	   .attr("height", 8 * (h - h1) / 10)
+//			 	   .attr("xlink:href",function (d) {
+//			 		   return "p/p3/" + currentResult+"." + d + ".jpg";
+//			 		   });
+			pc0.svg.selectAll(".dimension")
+			   .append("svg:image")
+			   .attr("x", 1)
+		 	   .attr("y", h1)
+		 	   .attr("width", imageWidth)
+		 	   .attr("height", h - 3 * h1)
+		 	   .attr("xlink:href",function (d) {
+		 		   return "p/p3/" + currentResult+"." + d + ".jpg";
+		 		   });
+//		    console.log("p/p3/" + currentResult+"." + d + ".jpg");
 		};
 		function setBar() {//append the green bar which is look like "I" to the axis
 			pc0.svg.selectAll(".dimension")

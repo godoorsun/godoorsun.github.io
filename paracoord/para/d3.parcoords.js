@@ -612,7 +612,15 @@ function flipAxisAndUpdatePCP(dimension, i) {
   d3.select(g[0][i])
     .transition()
       .duration(1100)
-      .call(axis.scale(yscale[dimension]));
+      .call(axis.scale(yscale[dimension].tickFormat(function (d) {
+    	  if(d == minValues[dimension]) {
+    		  return ranges[dimension][0];
+    	  } else if(d == maxValues[dimension]) {
+    		  return ranges[dimension][1];
+    	  } else {
+    		  return d;
+    	  }
+      })));
 
   pc.render();
   if (flags.shadows) paths(__.data, ctx.shadows);
@@ -643,7 +651,15 @@ pc.createAxes = function() {
   g.append("svg:g")
       .attr("class", "axis")
       .attr("transform", "translate(0,0)")
-      .each(function(d) { d3.select(this).call(axis.scale(yscale[d])); })
+      .each(function(d) { d3.select(this).call(axis.scale(yscale[d]).tickFormat(function (dvalue) {
+    	  if(dvalue == minValues[d]) {
+    		  return ranges[d][0];
+    	  } else if(dvalue == maxValues[d]) {
+    		  return ranges[d][1];
+    	  } else {
+    		  return dvalue;
+    	  }
+      })); })
     .append("svg:text")
       .attr({
         "text-anchor": "middle",
@@ -678,7 +694,15 @@ pc.updateAxes = function() {
     .append("svg:g")
       .attr("class", "axis")
       .attr("transform", "translate(0,0)")
-      .each(function(d) { d3.select(this).call(axis.scale(yscale[d])); })
+      .each(function(d) { d3.select(this).call(axis.scale(yscale[d]).tickFormat(function (dvalue) {
+    	  if(dvalue == minValues[d]) {
+    		  return ranges[d][0];
+    	  } else if(dvalue == maxValues[d]) {
+    		  return ranges[d][1];
+    	  } else {
+    		  return dvalue;
+    	  }
+      })); })
     .append("svg:text")
       .attr({
         "text-anchor": "middle",
@@ -697,7 +721,15 @@ pc.updateAxes = function() {
     .transition()
       .duration(1100)
       .each(function(d) {
-        d3.select(this).call(axis.scale(yscale[d]));
+        d3.select(this).call(axis.scale(yscale[d]).tickFormat(function (dvalue) {
+    	  if(dvalue == minValues[d]) {
+    		  return ranges[d][0];
+    	  } else if(dvalue == maxValues[d]) {
+    		  return ranges[d][1];
+    	  } else {
+    		  return dvalue;
+    	  }
+      }));
       });
   g_data.select(".label")
     .transition()
@@ -716,7 +748,15 @@ pc.updateAxes = function() {
   pc.svg.selectAll(".axis")
     .transition()
       .duration(1100)
-      .each(function(d) { d3.select(this).call(axis.scale(yscale[d])); });
+      .each(function(d) { d3.select(this).call(axis.scale(yscale[d]).tickFormat(function (dvalue) {
+    	  if(dvalue == minValues[d]) {
+    		  return ranges[d][0];
+    	  } else if(dvalue == maxValues[d]) {
+    		  return ranges[d][1];
+    	  } else {
+    		  return dvalue;
+    	  }
+      })); });
 
   if (flags.shadows) paths(__.data, ctx.shadows);
   if (flags.brushable) pc.brushable();
