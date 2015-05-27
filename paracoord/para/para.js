@@ -446,7 +446,7 @@ var showNULL = false,
 			pc0.svg.selectAll(".dimension")
 			   .append("svg:image")
 			   .attr("x", 1)
-		 	   .attr("y", h1)
+		 	   .attr("y", 2 * h1)
 		 	   .attr("width", imageWidth)
 		 	   .attr("height", h - 3 * h1)
 		 	   .attr("xlink:href",function (d) {
