@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Multi Destinations Multimodal transportation Travel Toolkit</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+
+	<script type="text/javascript" src="js/d3.min.js"> </script>
+	<script type="text/javascript" src="js/queue.v1.min.js"> </script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+
+	<style type="text/css">
+
+		body{
+			margin-left: 10px;
+		} 
+/*		div.dataTables_wrapper {
+	        width: 20%;
+		}		*/
+	</style>
+
+</head>
+<body>
+<div style="margin-top: 10px; font-size:20px;">
+<text >Multi Destinations Multimodal transporation Travel Toolkit (Alpha Version)</text>
+</div>
+<div style="margin-top: 10px; margin-bottom:10px">
+	<button type="button" class="btn btn-md btn-default" onclick="query()">Go</button>
+	<button type="button" class="btn btn-md btn-default" onclick="addlocation()">Add</button>
+    <label style="margin-left: 10px;">
+		<input type="checkbox" onchange="toggleCheckbox()" checked > Back to home (Location 1)?
+    </label>
+	<label style="margin-left: 10px;">
+    	<input type="checkbox" onchange="toggleCheckbox2()" checked > Exclude car share mode?</label>
+  	</div>
+
+</div>
+<div id ="locations" style="margin-bottom:10px">
+	<text> Location 1: </text>
+	<input type="text" name="location" value="Stuttgart" style="margin-bottom: 5px;">  
+	<text> Location 2: </text>
+	<input type="text" name="location" value="Vienna" style="margin-bottom: 5px;">  
+	<text> Location 3: </text>
+	<input type="text" name="location" value="Prague" style="margin-bottom: 5px;">  
+</div>
+
+<div id ="result">
+
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+
+var location_id = 4;
+var first_location_origin = true;
+var last_location_desitination = true;
+var original_api_server = "http://free.rome2rio.com/api/1.2/json/Search?key=bvylkA79&oName=###1&dName=###2";
+var perm_result = [];
+var locations = [];
+var dollar_euro = 0.889;
+var table_width = 333;
+var excludecarshare = true;
+
+function toggleCheckbox()
+ {
+ 	last_location_desitination = !last_location_desitination;
+ }
+ function toggleCheckbox2()
+ {
+ 	excludecarshare = !excludecarshare;
+ }
+
+function addlocation(){
+
+	d3.select("#locations").append("text").text("Location " + location_id++ + ": ");
+	d3.select("#locations").append("input")
+		.attr("type", "text")
+		.attr("name", "location")
+		.attr("style", "margin-bottom: 5px;");
+}
+function query(){
+
+
+	document.getElementById("result").innerHTML = "";
+	//auto compeletation needed.
+
+	locations = [];
+
+	for(var i = 0; i <  document.getElementsByName("location").length; i++)
+		locations.push((document.getElementsByName("location")[i]).value);
+
+	perm_result = [];
+
+	// console.log(locations);
+  //   for(var i = 0; i < locations.length; i ++){
+		// console.log(locations[i].value);
+  //   } 
+
+  	if(first_location_origin == true){
+  		var new_locations = [];
+  		for(var i = 1; i < locations.length; i++){
+  			new_locations.push(locations[i]);
+  		}
+  		perm(new_locations);
+  	}
+  	else{
+  		perm(locations);
+  	}
+
+  	var query_links = [];
+  	var query_links_para = [];
+  	var query_results = [];
+
+  	//A, B, C, D
+  	//ABCD(A)
+  	//ACBD(A)
+
+  	for(var i = 0; i < locations.length; i++){
+  		for(var j = 0; j < locations.length; j++){
+  				if(i == j)
+  					continue;
+  			    var api_server = original_api_server;
+    			api_server = api_server.replace("###1", locations[i]);
+    			api_server = api_server.replace("###2", locations[j]);
+    			//api_server = "http://free.rome2rio.com/api/1.2/json/Search?key=bvylkA79&oName=Stuttgart&dName=Munich";
+    			query_links.push(api_server);
+    			query_links_para.push(locations[i] + "-->" + locations[j]);
+  		}
+  	}
+
+
+  	var q = queue(1);
+  	for(var i = 0; i < query_links.length; i++){
+  		q.defer(d3.json, query_links[i]);
+  	}
+
+	q.awaitAll(function(error, query_results) {
+
+		var query_map = [];
+
+		for(var i = 0; i < query_results.length; i++){
+			query_map[query_links_para[i]] = query_results[i];
+		}
+ 
+
+		console.log("perm_result length:" +  perm_result.length);
+		for(var i = 0; i < perm_result.length; i++){
+			var solution_div = d3.select("#result").append("div")
+				.attr("id", "result" + "_" + (i + 1))
+				.attr("style", "width:" + (table_width + 10) * perm_result[i].length + "px;")
+			solution_div.append("text").text("Solution " + (i + 1) + ":")
+				.attr("style","font-weight:bold;float:left")
+				.attr("id", "Solution" + (i + 1) );
+			var minimum_price_sum = 0;
+			for(var j = 1; j < perm_result[i].length; j++){
+				var key = perm_result[i][j-1] + "-->" + perm_result[i][j];
+				var value = query_map[key];
+				var routes = value.routes;
+				var table_div =  solution_div.append("div").attr("style","float:left;margin-right:10px;");
+				//solution_div.append("text").text(key).attr("style","float:left");
+				var table = table_div.append("table").attr("class", "display").attr("id", "table_result" + "_" + i + "_" + j).attr("style","float:left");
+				var thead = table.append('thead');
+				var tbody = table.append('tbody');
+				var colums_name = ["Type", "Time", "Price", "Distance"];
+
+				thead.append("tr")
+					.append("th")
+					.text(key)
+					.attr("colspan", 4);
+				thead.append("tr")
+					.selectAll("th")
+					.data(colums_name).enter()
+					.append("th")
+					.text(function (column) {return column});
+
+
+				// create a row for each object in the data
+				var rows = tbody.selectAll('tr')
+					.data(routes.filter(function(d){
+						if(!excludecarshare)
+							return true;
+						else{
+							if(d.name.toLowerCase().indexOf("rideshare") != -1) 
+								return false;
+							return true;
+						}
+					}))
+					.enter()
+					.append('tr')
+					// .filter(function (d) {
+					// 	if(d.name.toLowerCase().indexOf("rideshare")) 
+					// 		return true; 
+					// 	return false;
+					// })
+					;
+
+				//create a cell in each row for each column
+				var minimum_price = 100000000;
+				var cells = rows.selectAll('td')
+					.data(function(row){
+						//console.log(row);
+						var td_array = [];
+						td_array[0] = row.name;
+						td_array[1] = row.duration + "m";
+						var price = row.indicativePrice.price;
+						if(price == undefined)
+							price = -1;
+						price = price * dollar_euro;
+						price = Math.floor(price);
+						if(price != -1 && price < minimum_price)
+							minimum_price = price;
+						td_array[2] = price + "€";
+						td_array[3] = row.distance + "km";
+						return td_array;
+					})
+					.enter()
+					.append("td")
+					.text(function(d, i){
+						//console.log(i);
+						return d;
+					});
+				minimum_price_sum += minimum_price;
+			}
+
+			d3.select("#Solution" + (i + 1)).text("#Solution" + (i + 1) + " (" + minimum_price_sum + "€) :" );
+			d3.select("#result_" + (i + 1))
+				.attr("price", minimum_price_sum)
+				.attr("class", "resultitem");
+
+			solution_div.append("br").attr("style", "clear:left");
+			solution_div.append("hr");
+			console.log(minimum_price_sum);
+
+		}
+
+		//reorder divs
+		var divList = $("#result");
+		divList.find('.resultitem').sort(function (a, b) {
+		    return parseInt(a.getAttribute("price")) - parseInt(b.getAttribute("price"));
+		})
+		.appendTo(divList);
+
+
+		for(var i = 0; i < perm_result.length; i++){
+			for(var j = 1; j < perm_result[i].length; j++){
+				$("#table_result" + "_" + i + "_" + j).DataTable({
+					 paging: false,
+					 info: false,      
+					 filter: false,
+        			 "scrollX": table_width + "px", 
+        			 "scrollCollapse": true,
+					 "order": [[ 2, "asc" ]]				 
+				});		
+
+			}
+		}
+
+
+
+	});
+}
+
+function swap(arr,i,j) {  
+    if(i!=j) {  
+        var temp=arr[i];  
+        arr[i]=arr[j];  
+        arr[j]=temp;  
+    }  
+} 
+function show(arr) {  
+    //document.write("P<sub>" +"</sub>: "+arr+"<br />");
+
+    var tmp = [];
+    for(var i = 0; i < arr.length; i++)
+    	tmp.push(arr[i]);
+ 	if(first_location_origin == true){
+ 		tmp.unshift(locations[0]);
+ 	}
+
+	if(last_location_desitination == true){
+		tmp.push(locations[0]);
+	}
+ 	console.log(tmp);
+    perm_result.push(tmp);
+}  
+function perm(arr) {  
+    (function fn(n) { //为第n个位置选择元素
+        for(var i=n;i<arr.length;i++) {  
+            swap(arr,i,n);  
+            if(n+1<arr.length-1) //判断数组中剩余的待全排列的元素是否大于1个
+                fn(n+1); //从第n+1个下标进行全排列
+            else 
+                show(arr); //显示一组结果
+            swap(arr,i,n);  
+        }  
+    })(0);  
+}  
+ 
+
+</script>
+
+</html>
+
