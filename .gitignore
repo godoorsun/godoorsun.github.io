@@ -4,6 +4,11 @@
 
 ignored_files/
 
+
+_site
+.sass-cache
+.jekyll-metadata
+
 *.aux
 *.glo
 *.idx
