@@ -6,7 +6,7 @@ categories: blog uncategorized
 ---
  
 
-
+·
 ![](/assets/vis2014_blog_images/image001.png)
 
 
@@ -152,7 +152,8 @@ session）。
 文本可视化分析的工作则将可视化技术和数据挖掘技术进行了深度的集成。例如TopicPanorama通过从不同数据源（新闻，微博等）抽取话题，构建网络，从而给人们展示了一个事件全景图。通过构建全景图，人们才能很容易发现怎样的话题是各个数据源独有的。或者即使是一些共有的话题，不同的数据源又有怎样的侧重点。
 
 <img src="/assets/vis2014_blog_images/image011.png" />
-图7.用TopicPanorama展示了来时新闻（粉色）和微博（黄色）的话题分布以及话题之间的关系</div>
+图7.用TopicPanorama展示了来时新闻（粉色）和微博（黄色）的话题分布以及话题之间的关系
+{: style="text-align: center;"}
 <span> </span>
 
 
