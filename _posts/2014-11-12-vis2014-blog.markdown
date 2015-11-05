@@ -18,6 +18,7 @@ categories: blog uncategorized
 
 <span> </span>
 
+ 
 
 [IEEE VIS](http://ieeevis.org/)作为可视化领域顶级权威会议，其一直致力于联合学术界、工业界以及政府部门的研究、开发以及实践人员，探索可视化方面相关的新颖方法技术和开发实用工具。IEEE
 VIS包括三个核心子会议，即IEEE Scientific Visualization (IEEE
@@ -32,7 +33,7 @@ VIS会议是第25届大会，为了庆祝这[25周年](http://vimeo.com/groups/2
 本次大会的参会人员达到了1100多人，创造了历史记录。此外，各大赞助商对本次会议的赞助额度也比去年多了一倍多，这是非常令人鼓舞的消息，同样也说明了可视化在美国本土外的发展也是受到广泛的认可。
 
 ![](/assets/vis2014_blog_images/image005.png)
-<div align="center">图1.IEEE VIS 2014大会开幕现场 </div>
+<p align="center">图1.IEEE VIS 2014大会开幕现场 </p>
 <span> </span>
 
 
