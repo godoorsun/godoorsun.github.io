@@ -33,7 +33,7 @@ categories: blog none
 
 To be continued.
 
-Feel free to ask any questions.
+Feel free to ask any question.
 
 [LaTex2Word-Equation]: https://github.com/idf/LaTex2Word-Equation
 [视频教程]: https://www.youtube.com/watch?v=56HWKBuM-zg
