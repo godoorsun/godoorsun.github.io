@@ -14,3 +14,9 @@ html转换为markdown的时候，需要删除markdown中的div，否则显示不
 
 感觉html转为markdown的优势没有直接word转为markdown方便，干净
 
+
+
+文字居中：
+Try using kramdown block attributes kramdown block attributes :
+Test text
+{: style="color:gray; font-size: 80%; text-align: center;"}

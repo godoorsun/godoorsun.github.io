@@ -10,11 +10,10 @@ categories: blog uncategorized
 ![](/assets/vis2014_blog_images/image001.png)
 
 
-<div align="center" >
 <img src="/assets/vis2014_blog_images/image003.jpg"  style="width: 37.5%;"/>
 <img src="/assets/vis2014_blog_images/image002.jpg"  style="width: 36.5%;"/>
 <img src="/assets/vis2014_blog_images/image004.jpg"  style="width: 24.5%;"/>
-</div>
+
 
 <span> </span>
 
@@ -45,7 +44,8 @@ VAST最佳论文提名奖 (VAST HONORABLE MENTION AWARD) 。
 
 
 <img src="/assets/vis2014_blog_images/image006.jpg" />
-<div align="center">图2. 华人学者在会场拍照留念</div>
+图2. 华人学者在会场拍照留念
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -63,7 +63,8 @@ VIS的三大核心会议，每年同时同地举办。
 Track，而其他部分高质量的文章将被收录于Conference Only Track。
 
 <img src="/assets/vis2014_blog_images/image007.jpg" />
-<div align="center">图3 InfoVis论文报告分会场的火爆场面</div>
+图3 InfoVis论文报告分会场的火爆场面
+{: style="text-align: center;"}
 <span> </span>
 
 从会议每年的最佳论文奖 (Best Paper
@@ -79,7 +80,8 @@ Wijk曾建议将他们所设计的可视化系统命名为Namredienhs，也就�
 
 
 <img src="/assets/vis2014_blog_images/image008.png" />
-<div align="center">图4.通过选择和聚集操作，细节丰富的多维网络图被转变成为高层次结构的概览图</div>
+图4.通过选择和聚集操作，细节丰富的多维网络图被转变成为高层次结构的概览图
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -127,8 +129,8 @@ media](http://research.microsoft.com/en-us/um/people/ycwu/projects/evoriver.html
 研究用户的观点在社交媒体中发展传播的过程，而EvoRiver则分析和理解信息在社交媒体上交互的动态演变过程。信息交互的可视分析旨在通过可视化的形式揭示信息在社交媒体这一虚拟空间上的交互过程。信息可以是单条微博，也可以是大量微博构成的一个话题。信息交互的形式是多种多样的，如社交媒体中一个话题可以通过压制另外一个话题以提高本话题的用户关注度（话题竞争），同样话题之间也可以互相协同一起来吸引更多用户的关注（话题合作）。我们设计并实现的EvoRiver，可用于可视化和理解话题在话题领袖作用下的复杂的、动态的竞争合作情况。如下图所示，每条带子表示一个话题，橙色的带子表示该话题倾向于竞争，绿色的带子表示该话题倾向于合作，带子从橙色到绿色的转换意味着对应的话题从倾向于竞争转变向倾向于合作。通过适当的布局算法，EvoRiver展示了话题在社交媒体中动态变化的过程。
 
 <img src="/assets/vis2014_blog_images/image009.png" />
-<div align="center">图5. EvoRiver用于 展示社交媒体中话题合作竞争的动态变化
-</div>
+图5. EvoRiver用于 展示社交媒体中话题合作竞争的动态变化
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -138,7 +140,8 @@ Engines则是与微软搜索部门合作的成果。通过与搜索引擎领域�
 View）以展现用户在使用不同搜索引擎时的忠诚度变化。图中颜色的深浅用于代表用户忠诚度的高低，流图中每条带子的宽度表示相应忠诚度下用户的数量。通过在带子上添加分支，LoyalTracker可以帮助专家有效地理解当前搜索引擎中用户忠诚度的分布和不同忠诚度的用户在使用搜索引擎时候的动态转变行为。
 
 <img src="/assets/vis2014_blog_images/image010.png" />
-<div align="center">图6. LoyalTracker用于展示用户在使用搜索引擎时忠诚度的动态变化</div>
+图6. LoyalTracker用于展示用户在使用搜索引擎时忠诚度的动态变化
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -149,7 +152,7 @@ session）。
 文本可视化分析的工作则将可视化技术和数据挖掘技术进行了深度的集成。例如TopicPanorama通过从不同数据源（新闻，微博等）抽取话题，构建网络，从而给人们展示了一个事件全景图。通过构建全景图，人们才能很容易发现怎样的话题是各个数据源独有的。或者即使是一些共有的话题，不同的数据源又有怎样的侧重点。
 
 <img src="/assets/vis2014_blog_images/image011.png" />
-<div align="center">图7.用TopicPanorama展示了来时新闻（粉色）和微博（黄色）的话题分布以及话题之间的关系</div>
+图7.用TopicPanorama展示了来时新闻（粉色）和微博（黄色）的话题分布以及话题之间的关系</div>
 <span> </span>
 
 
@@ -157,7 +160,8 @@ session）。
 RoseRiver则深度整合了话题树的技术，将话题随时间的变化表示成了一条条横向流动的河流（图9）。在这显示中，不同的颜色表示了不同的话题。通过观察河流的流向，宽度，颜色的变化，人们得以更直观的理解话题的动态性。
 
 <img src="/assets/vis2014_blog_images/image012.png" />
-<div align="center">图8. 用RoseRiver表示的棱镜事件在前两个月的话题变化</div>
+图8. 用RoseRiver表示的棱镜事件在前两个月的话题变化
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -170,7 +174,8 @@ RoseRiver则深度整合了话题树的技术，将话题随时间的变化表�
 25年来最具影响力或最具创造力或应用最广的一些可视化的年表。此外，主办方还提供了一个[在线的可视化年表](http://www.aviz.fr/~bbach/vis25timeline/)以供用户查阅。
 
 <img src="/assets/vis2014_blog_images/image013.jpg" />
-<div align="center">图9. VIS 25周年可视化年表</div>
+图9. VIS 25周年可视化年表
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -180,7 +185,8 @@ RoseRiver则深度整合了话题树的技术，将话题随时间的变化表�
 (纵轴)的论文的数量。在InfoVis中，我们可以看到，发表在某年的论文大都是引用该年前几年的文章，这也是会议朝着健康方向发展的一个标志。
 
 ![](/assets/vis2014_blog_images/image014.png)
-<div align="center">图10. VIS 25年内所有发表文章的相互引用情况</div>
+图10. VIS 25年内所有发表文章的相互引用情况
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -190,8 +196,9 @@ RoseRiver则深度整合了话题树的技术，将话题随时间的变化表�
 ”的骑行活动，与会者可以自愿报名，参加预先设定的骑行路线，路线总长约75公里，总爬坡高度达850m，且平均时速需保持20公里每小时。
 
 ![](/assets/vis2014_blog_images/image015.jpg)
-<div align="center">图11.
-参加VIS环法自行车的与会者们</div>
+图11.
+参加VIS环法自行车的与会者们
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -207,7 +214,8 @@ Presentation Supported by
 Visualizations)。下图就是天津大学和中南大学合作设计实现的多视图可视分析系统MEAT，用于探索此次失踪事件背后的故事。
 
 ![](/assets/vis2014_blog_images/image016.png)
-<div align="center">图12. MEAT可视分析系统界面，不同视图之间可以协同操作以辅助数据探索</div>
+图12. MEAT可视分析系统界面，不同视图之间可以协同操作以辅助数据探索
+{: style="text-align: center;"}
 <span> </span>
 
 
@@ -226,7 +234,8 @@ Lunch这一非正式活动，在该活动中，刚起步的研究员或者研究
 我们可以看到，可视化领域的先辈们在没有计算机的情况下，实现这些可交互的可视化原型是相当不容易的。
 
 ![](/assets/vis2014_blog_images/image017.png)
-<div align="center">图13. 基于Jacques Bertin的reorderable matrix所实现的物理模型</div>
+图13. 基于Jacques Bertin的reorderable matrix所实现的物理模型
+{: style="text-align: center;"}
 <span> </span>
 
 注1：部分图片来自于互联网
