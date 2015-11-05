@@ -33,7 +33,8 @@ VIS会议是第25届大会，为了庆祝这[25周年](http://vimeo.com/groups/2
 本次大会的参会人员达到了1100多人，创造了历史记录。此外，各大赞助商对本次会议的赞助额度也比去年多了一倍多，这是非常令人鼓舞的消息，同样也说明了可视化在美国本土外的发展也是受到广泛的认可。
 
 ![](/assets/vis2014_blog_images/image005.png)
-<p align="center">图1.IEEE VIS 2014大会开幕现场 </p>
+图1.IEEE VIS 2014大会开幕现场
+{: style="text-align: center;"}
 <span> </span>
 
 
