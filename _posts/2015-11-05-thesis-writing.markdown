@@ -1,8 +1,9 @@
 ---
+published: true
 layout: post
-title:  "How to finish a thesis with MS Office on Mac?"
+title:  "How to write a thesis with MS Office on Mac?"
 date:   2015-11-05 00:22:44 +0100
-categories: blog none
+categories: blog uncategorized
 ---
 
 > 随着苹果设备的普及，用Mac的人也越来越多，在Mac下用Microsoft Office写毕业论文的人也随之增加，那么在使用过程中总会存在一些令人烦恼的问题，这里简单总结了下本人在用Word 2016 for Mac 写完一篇100多页博士毕业论文后的一些经验和工具等。
