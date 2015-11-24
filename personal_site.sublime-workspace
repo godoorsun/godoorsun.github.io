@@ -79,22 +79,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 10902,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "misc.html",
-			"settings":
-			{
-				"buffer_size": 1474,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -123,10 +107,58 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 267.0,
-		"last_filter": "",
+		"height": 127.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rempo",
+				"Package Control: Remove Package"
+			],
+			[
+				"re move",
+				"Package Control: Remove Channel"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"pa c k",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"File: Close All"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pa c",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pa c ka ge",
+				"Package Control: Remove Package"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
 			[
 				"f",
 				"File: Close All"
@@ -134,10 +166,6 @@
 			[
 				"Snippet: ",
 				"Snippet: html"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"LaTeXTool",
@@ -148,7 +176,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 593.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -173,10 +201,49 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github"
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_sass"
 	],
 	"file_history":
 	[
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2013-02-01-photography.markdown",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-04-github-tips.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-04-github-tips.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/icon-github.svg",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/sungodoor/Library/Rime/luna_pinyin_simp.schema.yaml",
+		"/Users/sungodoor/Library/Rime/user.yaml",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2015-11-05-thesis-writing.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-07-travel-tips.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts/post.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2013-02-01.photography.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-12-vis2014-blog.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-04-pandoc-tips.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-12-vis2014-blog2.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_sass/_base.scss",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/css/main.scss",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/index.html",
+		"/Users/sungodoor/Desktop/test.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-04-d3-playground.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2015-11-04-welcome-to-jekyll.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/d3_playground.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/00_category.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_config.yml",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/01_about.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts/default.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/footer.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/header.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/about.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/icon-twitter-backup.svg",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/icon-twitter.svg",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/blog.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/misc.html",
 		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/Travel_Toolkit/Multi Destinations Multimodal transportation Travel Toolkit.html",
 		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/socialflow.js",
 		"/Users/sungodoor/Desktop/Multi-modal-search",
@@ -260,7 +327,6 @@
 		"/Users/sungodoor/Desktop/Gallery-master/package.json",
 		"/Users/sungodoor/Desktop/Gallery-master/index.html",
 		"/Users/sungodoor/Desktop/vivid-photo-master/index.html",
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/index.html",
 		"/Users/sungodoor/Desktop/Gallery-master/blueimp-gallery.jquery.json",
 		"/Users/sungodoor/Desktop/Gallery-master/bower.json",
 		"/Users/sungodoor/Desktop/Gallery-master/Gruntfile.js",
@@ -271,40 +337,7 @@
 		"/Users/sungodoor/Desktop/course_vis/d3-book-master/chapter_06/21_making_a_bar_chart_aligned.html",
 		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/socialflow_heatmapvis.js",
 		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/socialflow_graphvis.js",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/social_flow.html",
-		"/Users/sungodoor/Desktop/ugly codes/coopetitionvis/CoopetitionVis/Visualization/Layout/LayerOptimizerFinal.cs",
-		"/Users/sungodoor/百度云同步盘/10_topics.txt",
-		"/Users/sungodoor/Downloads/数据.sav",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/json-to-table.js",
-		"/Users/sungodoor/Desktop/jspkg-archive/bower.json",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/d3_word_cloud_test.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/d3.layout.cloud.js",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/d3-ForceEdgeBundling.js",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015/.\\output",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/animation_test.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/dorling_maps.html",
-		"/Users/sungodoor/Downloads/cities15000.txt",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/bootstrap_test.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/heatmap.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/reorderedheatmap.js",
-		"/Users/sungodoor/Desktop/d3.ForceBundle/d3-ForceEdgeBundling.js",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/force_directed_edge_bundling.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/dorling_maps(GODOORSUN-PC--godoor--2015-03-06-01,25,20).html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/edge_bundling.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/force_directed_edge_bundling",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/graph_with_fixed_nodes.html",
-		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/graph_with_fixed_manual_nodes.html",
-		"/Applications/lindoapi/samples/c/ex_nlp7/ex_nlp7.c",
-		"/Applications/lindoapi/samples/c/ex_nlp8/ex_nlp8.c",
-		"/Applications/lindoapi/samples/c/ex_nlp9_uc/ex_nlp9_uc.c",
-		"/Applications/lindoapi/samples/c/ex_samp1/ex_samp1.c",
-		"/Applications/lindoapi/samples/c/ex_samp2/ex_samp2.c",
-		"/Applications/lindoapi/samples/c/ex_port/ex_port.c",
-		"/Applications/lindoapi/samples/c/ex_nlp6/ex_nlp6.c",
-		"/Applications/lindoapi/samples/c/ex_nlp5/ex_nlp5.c",
-		"/Applications/lindoapi/samples/c/ex_nlp3/ex_nlp3.c",
-		"/Applications/lindoapi/samples/c/ex_mt1/ex_mt1.c",
-		"/Applications/lindoapi/samples/c/ex_mps/ex_mps.c"
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/src/social_flow.html"
 	],
 	"find":
 	{
@@ -322,6 +355,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"highli",
+			"re tu r n",
+			"如果照片的一个角那里有比较突出的东西，剪裁掉图片则会不同程度地缩小，那么可以使用暗角功能，在使用的时候也可以保留高光。感觉暗角可以让主体更加突出！",
+			"gps",
+			"geo",
+			"gps",
+			"g p s",
+			"div",
+			"</di",
+			"<div align=\"center\">",
+			"***",
+			"\\",
+			")](htt",
+			")](htt*)",
+			")](htt",
+			"(htt",
+			"Note.resources",
+			"div",
+			"007",
+			"image0",
+			"/image",
+			"image",
+			"media/",
+			"png",
+			"jpeg",
+			"images/",
+			"image",
+			"about",
+			"head",
+			"about",
+			"layout",
 			"mix",
 			" mix",
 			"key",
@@ -418,38 +482,7 @@
 			"adobe kai",
 			"simkai",
 			"kaiti",
-			"gbk",
-			"54%",
-			"24843",
-			"28/",
-			"2015",
-			"37",
-			"54%",
-			"format",
-			"call",
-			".call",
-			"drag",
-			")\n",
-			"K",
-			"apply_resulting_forces_on_subdivision_points",
-			"apply_spring_force",
-			" K",
-			" K ",
-			"arguments",
-			" e ",
-			"sbd",
-			"window.sbd",
-			"window.sbd ",
-			"S_initial",
-			"apply_resulting_forces_on_subdivision_points",
-			"apply_electrostatic_force",
-			"apply_spring_force",
-			"filter_self_loops",
-			"edgelist",
-			"compatibility_list_for_edge",
-			"initialize_edge_subdivisions",
-			"custom_edge_length",
-			"subdivision_points_for_edge"
+			"gbk"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -457,6 +490,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"/assets/Note.resources",
+			"/image0",
+			"/assets/vis2014_blog_images/",
+			"assets/homepage_images/"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -467,70 +505,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10902,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2166,
-								2166
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 805.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "misc.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								373,
-								373
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 116.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -540,7 +516,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -573,11 +549,15 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"output.markdown":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "Packages/Markdown Preview/Markdown.sublime-build",
 	"project": "personal_site.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -615,7 +595,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 367.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

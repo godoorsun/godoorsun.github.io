@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title:  "How to write a thesis with MS Office on Mac?"
+title:  "Tips for writing a thesis with MS Office on Mac"
 date:   2015-11-05 00:22:44 +0100
 categories: blog uncategorized
 ---
@@ -31,6 +31,7 @@ categories: blog uncategorized
 
 1. 在word中也可以使用bibtex，http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html
 2. alt+F9 可以查看所有域的source field，可修改，检查，mac下的office不支持修改域代码，windows上的office可以
+3. A tutorial:Using Microsoft Word 2011 (Mac) for Your Dissertation: http://www.lib.umich.edu/files/services/exploratory/pdfs/wordfordissmac2011.pdf
 
 To be continued.
 
