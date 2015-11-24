@@ -19,3 +19,7 @@ disqus: godoorsun
 
 # Build settings
 markdown: kramdown
+
+
+gems:
+  - jekyll-sitemap
