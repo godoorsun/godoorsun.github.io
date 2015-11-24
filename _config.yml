@@ -11,7 +11,7 @@ email: godoor.sun[at]gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Looking for an awesome description 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "godoorsun.github.io" # the base hostname & protocol for your site
+url: "http://godoorsun.github.io" # the base hostname & protocol for your site
 twitter_username: godoorsun
 github_username:  godoorsun
 
