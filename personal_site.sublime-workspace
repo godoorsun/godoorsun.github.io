@@ -1,0 +1,681 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getele",
+				"getElementsByName〔function〕"
+			],
+			[
+				"loca",
+				"locations〔variable〕"
+			],
+			[
+				"get",
+				"getAttribute〔function〕"
+			],
+			[
+				"type",
+				"type=〔attribute〕"
+			],
+			[
+				"selec",
+				"selectAll"
+			],
+			[
+				"foc",
+				"focus_max"
+			],
+			[
+				"x",
+				"x_original"
+			],
+			[
+				"node_",
+				"node_data_for_bundling"
+			],
+			[
+				"cen",
+				"center_y"
+			],
+			[
+				"ceter",
+				"center_x"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"ori",
+				"origianl_lines"
+			],
+			[
+				"origia",
+				"origianl_svg"
+			],
+			[
+				"en",
+				"enlarge"
+			],
+			[
+				"stro",
+				"stroke-width"
+			],
+			[
+				"sele",
+				"selectAll"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"rang",
+				"ranges_values"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_drafts/2015-11-30-Linode.markdown",
+			"settings":
+			{
+				"buffer_size": 7176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "老婆我爱你:D",
+			"settings":
+			{
+				"buffer_size": 7,
+				"line_ending": "Unix",
+				"name": "老婆我爱你:D"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rempo",
+				"Package Control: Remove Package"
+			],
+			[
+				"re move",
+				"Package Control: Remove Channel"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"pa c k",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"File: Close All"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pa c",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pa c ka ge",
+				"Package Control: Remove Package"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"f",
+				"File: Close All"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"LaTeXTool",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 324.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"install package",
+			"install",
+			"install package",
+			"install"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts"
+	],
+	"file_history":
+	[
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2016-02-23-Doc Fetcher.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-30-Linode.markdown",
+		"/Users/sungodoor/百度云同步盘/01.Research/02.PVis_to_TVCG_Resubmission/01.draft_tvcg_road_broadening_resubmission/texfiles/roadbroaden.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/02.PVis_to_TVCG_Resubmission/01.draft_tvcg_road_broadening_resubmission/texfiles/relatedwork.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/02.PVis_to_TVCG_Resubmission/01.draft_tvcg_road_broadening_resubmission/texfiles/introduction.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/02.PVis_to_TVCG_Resubmission/01.draft_tvcg_road_broadening_resubmission/road_broadening.bbl",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-04-d3-note.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-04-d3-playground.markdown",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/server/Config/TwitterRSync.properties",
+		"/Users/sungodoor/Documents/workspace/PacificVis_Twitter/include/conclusion.inc",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-30-Linode.html",
+		"/Users/sungodoor/Documents/workspace/PacificVis_Twitter/pacificvis16-twitter.tex",
+		"/Users/sungodoor/Documents/workspace/PacificVis_Twitter/include/approach.inc",
+		"/Users/sungodoor/Documents/workspace/PacificVis_Twitter/include/systemOverview.inc",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/server/Config/TwitterFetcher.properties",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/server/oauth/twitter4j_1.properties",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/server/Quadtree_World_Data.txt",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/client/rsync_on_windows.bat",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/Config/TwitterRSync.properties",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/Config/TwitterFetcher.properties",
+		"/Users/sungodoor/Desktop/SyncDeploy_zjuvis/oauth/twitter4j_1.properties",
+		"/Users/sungodoor/Desktop/SyncDeploy/rsync_on_windows.bat",
+		"/Users/sungodoor/Desktop/Classifier/Classifier/Program.cs",
+		"/Users/sungodoor/Desktop/ptproxy-master/server.json",
+		"/Users/sungodoor/Desktop/ptproxy-master/client.json",
+		"/Users/sungodoor/Desktop/ptproxy-master/example.json",
+		"/Users/sungodoor/Desktop/Classifier/Classifier/Config.cs",
+		"/Users/sungodoor/Desktop/Classifier/Classifier/Classifier.cs",
+		"/Users/sungodoor/Desktop/Classifier/Classifier/Ngram.cs",
+		"/Users/sungodoor/Desktop/论文查询",
+		"/Users/sungodoor/Desktop/报销的材料",
+		"/Users/sungodoor/Desktop/lucene-5.3.1/CHANGES.txt",
+		"/Users/sungodoor/Documents/workspace/TwitterStreamFetch/.gitignore",
+		"/Users/sungodoor/Desktop/auth.log",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-12-03-TwitterIndexer.markdown",
+		"/Users/sungodoor/Desktop/twitter_zhuaqu",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-07-travel-tips.markdown",
+		"/Users/sungodoor/Desktop/oott123-bpcs_uploader-3a75324/bpcs_uploader.php",
+		"/Users/sungodoor/Desktop/baidupan_uploader/_bpcs_files_/core.php",
+		"/Users/sungodoor/Desktop/StatusJSONImpl{createdAt=Mon Nov 30 13:28:57 CET 2",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-05-paper-digest.markdown",
+		"/Users/sungodoor/Desktop/dataset_TIST2015/dataset_TIST2015_readme.txt",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-11-paper-digest.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2015-11-05-thesis-writing.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_config.yml",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2013-02-01-photography.markdown",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-04-github-tips.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-04-github-tips.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/icon-github.svg",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/sungodoor/Library/Rime/luna_pinyin_simp.schema.yaml",
+		"/Users/sungodoor/Library/Rime/user.yaml",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts/post.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2013-02-01.photography.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-12-vis2014-blog.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/2015-11-04-pandoc-tips.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-12-vis2014-blog2.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_sass/_base.scss",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/css/main.scss",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/index.html",
+		"/Users/sungodoor/Desktop/test.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2014-11-04-d3-playground.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts/2015-11-04-welcome-to-jekyll.markdown",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts/d3_playground.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/00_category.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/01_about.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts/default.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/footer.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/header.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/about.md",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/icon-twitter-backup.svg",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes/icon-twitter.svg",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/blog.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/misc.html",
+		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/Travel_Toolkit/Multi Destinations Multimodal transportation Travel Toolkit.html",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/vis/libs/socialflow.js",
+		"/Users/sungodoor/Desktop/Multi-modal-search",
+		"/Users/sungodoor/Desktop/Travel_Toolkit/Multi-modal-search.html",
+		"/Users/sungodoor/Desktop/link_extract.js",
+		"/Users/sungodoor/Library/Application Support/Alfred 2/Alfred.alfredpreferences/workflows/user.workflow.389E9530-DDCB-4B86-843A-D6BA4D02A39A/r2r.py",
+		"/Users/sungodoor/Desktop/rome2rio search.alfredworkflow",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/01.vis2015_geovis_social_media/data/flights/airlines.dat",
+		"/Users/sungodoor/Desktop/pvis2016_template/vgtc.cls",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/vgtc.cls",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/introduction.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/model.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/conclusion.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/casestudy.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/pvis2016.sublime-workspace",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/pvis2016.sublime-project",
+		"/Users/sungodoor/百度云同步盘/博士论文/01.提交材料开题报告申请表、中期考核表、教学实践考核表，学术活动记录表（含读书报告）/通知.txt",
+		"/Users/sungodoor/Desktop/latex_conf_vgtc_080216/template.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/pvis2016.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/abstract.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/relatedwork.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/outline.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/visualdesign.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/system.tex",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/texfiles/rationality.tex",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sungodoor/百度云同步盘/01.Research/03.GeoVis&SocialMedia/02.draft_vis_2015_for_pvis/reference.bib",
+		"/Users/sungodoor/Desktop/latex/untitled.tex",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/Default (OSX).sublime-keymap.OLD",
+		"/Users/sungodoor/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/sungodoor/Documents/workspace/RealTimeTwitter/data/flights/routes.dat",
+		"/Users/sungodoor/Documents/workspace/RealTimeTwitter/data/flights/airports.dat",
+		"/Users/sungodoor/Documents/workspace/RealTimeTwitter/data/flights/airlines.dat",
+		"/Users/sungodoor/Desktop/taxi.csv",
+		"/Users/sungodoor/Desktop/ugly codes/roadbrodening_optimzation/RoadBrodening/Data/RoadModel.cs",
+		"/Users/sungodoor/Desktop/test.txt",
+		"/Users/sungodoor/Desktop/coarse_code_collection/task33/y1.json",
+		"/Users/sungodoor/百度云同步盘/博士论文/01.提交材料开题报告申请表、中期考核表、教学实践考核表，学术活动记录表（含读书报告）/答辩前递交的材料.txt",
+		"/Users/sungodoor/Desktop/airline data/openflights-master/data/airports.dat",
+		"/Users/sungodoor/Desktop/tmp.txt",
+		"/Users/sungodoor/百度云同步盘/博士论文/03.正文/论文参考内容/evoriver.txt",
+		"/Users/sungodoor/百度云同步盘/博士论文/03.正文/论文参考内容/EvoRiver：主题竞合的社会化媒体上的可视化分析.html",
+		"/Users/sungodoor/百度云同步盘/博士论文/response.txt",
+		"/Users/sungodoor/Desktop/airline data/openflights-master/data/routes.dat",
+		"/Users/sungodoor/Desktop/airline data/openflights-master/data/tmpfile.txt",
+		"/Users/sungodoor/Desktop/measurements_1.csv",
+		"/Users/sungodoor/Desktop/airline data/openflights-master/data/countries.dat",
+		"/Users/sungodoor/Desktop/airline data/openflights-master/data/airports-dafif.dat",
+		"/Users/sungodoor/Documents/workspace/RealTimeTwitter/fx/layout2.fxml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sss",
+			"s's",
+			"authorized_keys",
+			"日志",
+			"s'sh",
+			"shadow",
+			"16101",
+			"1610",
+			"shadow",
+			"screen",
+			"apt-get",
+			"a'p",
+			"-e",
+			"45.79.91.192",
+			"45.79.102.76",
+			"shadow",
+			"ExtractUnigramFeaturesForRealData",
+			"重启",
+			"139.162.8.196",
+			"shadown",
+			"sha",
+			"r's'y'n'c",
+			"screen",
+			"139.162.7.240",
+			"ssh",
+			"139.162.7.18",
+			"sshge",
+			"spatial",
+			"/*",
+			"-jar",
+			"java -j",
+			".ssh",
+			"密码",
+			"ssh",
+			"s'sh",
+			"miss",
+			"upload",
+			"folder",
+			"only ge",
+			"only getGeoLoca",
+			"only geo",
+			"geolocation",
+			"getlocation",
+			"geolocation",
+			"percentage",
+			"track limitation notice",
+			"track limitat",
+			"2014",
+			"highli",
+			"re tu r n",
+			"如果照片的一个角那里有比较突出的东西，剪裁掉图片则会不同程度地缩小，那么可以使用暗角功能，在使用的时候也可以保留高光。感觉暗角可以让主体更加突出！",
+			"gps",
+			"geo",
+			"gps",
+			"g p s",
+			"div",
+			"</di",
+			"<div align=\"center\">",
+			"***",
+			"\\",
+			")](htt",
+			")](htt*)",
+			")](htt",
+			"(htt",
+			"Note.resources",
+			"div",
+			"007",
+			"image0",
+			"/image",
+			"image",
+			"media/",
+			"png",
+			"jpeg",
+			"images/",
+			"image",
+			"about",
+			"head",
+			"about",
+			"layout",
+			"mix",
+			" mix",
+			"key",
+			"textheight",
+			"height",
+			"Visualizing the dynamics of lo",
+			"vided edge bundling for direc",
+			"@book",
+			"book",
+			"movementfin",
+			"y exploring multi-dimensio",
+			"Archambault",
+			"D.Archambault",
+			"s of the 13th Conference on Informati",
+			"textheight",
+			"text",
+			"textheig",
+			"text",
+			"te'x't'hei'g'h't",
+			"1825	--------	3877",
+			"1804	--------	3867",
+			"1804	--------	3621",
+			"United States",
+			"proceeding",
+			"direct",
+			"performing",
+			"abstract",
+			"\\setlength{\\footskip}{0.5in}",
+			"google",
+			"build",
+			"forward",
+			"BKK,3885,KUL,3304",
+			"KUL,3304,BKK,3885",
+			"BKK,3885,KUL,3304",
+			"KUL,3304,BKK,3885",
+			"LHR,507,JFK,3797,",
+			"JFK,3797,LHR,507,",
+			"LHR,507,SFO,3469,",
+			"SFO,3469,LHR,507,",
+			"3469",
+			"LHR,507,JFK,3797,",
+			"JFK,3797,LHR,507,",
+			"LHR,507,JFK,3797,",
+			"JFK,3797,LHR,507,",
+			"507",
+			"3797",
+			"http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7265099",
+			"arnumber",
+			"22"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"173.255.210.47",
+			"45.79.91.192",
+			"45.79.102.76",
+			"139.162.8.196",
+			"139.162.7.240",
+			"",
+			"/assets/Note.resources",
+			"/image0",
+			"/assets/vis2014_blog_images/",
+			"assets/homepage_images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_drafts/2015-11-30-Linode.markdown",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7115,
+								7115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 110166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"auto_name": "老婆我爱你:D",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "Packages/Markdown Preview/Markdown.sublime-build",
+	"project": "personal_site.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 367.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

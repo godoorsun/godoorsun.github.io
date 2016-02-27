@@ -1,0 +1,245 @@
+---
+layout: post
+title:  "走进数据可视化的视觉盛宴 - IEEE VIS 2014大会"
+date:   2014-11-12 13:34:44 +0100
+categories: blog uncategorized
+---
+ 
+
+·
+![](/assets/vis2014_blog_images/image001.png)
+
+
+<img src="/assets/vis2014_blog_images/image003.jpg"  style="width: 37.5%;"/>
+<img src="/assets/vis2014_blog_images/image002.jpg"  style="width: 36.5%;"/>
+<img src="/assets/vis2014_blog_images/image004.jpg"  style="width: 24.5%;"/>
+
+
+<span> </span>
+
+ 
+
+[IEEE VIS](http://ieeevis.org/)作为可视化领域顶级权威会议，其一直致力于联合学术界、工业界以及政府部门的研究、开发以及实践人员，探索可视化方面相关的新颖方法技术和开发实用工具。IEEE
+VIS包括三个核心子会议，即IEEE Scientific Visualization (IEEE
+SciVis)、IEEE Information Visualization（IEEE InfoVis）和IEEE Visual
+Analytics Science and Technology（IEEE
+VAST），这三大核心会议分别关注科学数据可视化如医学数据和科学模拟数据的可视化，抽象信息可视化如网络数据可视化，和可视数据分析即结合交互可视化技术和机器智能对数据进行有效的分析。除了这三个核心会议之外，本次会议还包括了超大规模数据的分析和可视化（Large-Scale
+Data Analysis and
+Visualization）专题报告会以及众多教程(Tutorials)和其他研讨会如BELIV和VizSec。参会人员非常广泛，有来自各大高校和研究所的教授、研究员和学生，也有来自工业界的工程师，以及设计界、艺术界等领域的人员，他们都可以在会场找到自己感兴趣的专题或者展览。
+
+今年的IEEE
+VIS会议是第25届大会，为了庆祝这[25周年](http://vimeo.com/groups/217338/videos/113119116)以及致谢欧洲可视化同行对可视化领域的卓越贡献，会议举办地点第一次搬到了美国本土外—法国巴黎—这一具有悠久历史文化的名城。
+本次大会的参会人员达到了1100多人，创造了历史记录。此外，各大赞助商对本次会议的赞助额度也比去年多了一倍多，这是非常令人鼓舞的消息，同样也说明了可视化在美国本土外的发展也是受到广泛的认可。
+
+![](/assets/vis2014_blog_images/image005.png)
+图1.IEEE VIS 2014大会开幕现场
+{: style="text-align: center;"}
+<span> </span>
+
+
+在这次大会上，华人学者的参与度比往年明显增加，据不完全统计有80多位华人学者参与此次的盛会。来自中国大陆的论文数量也创造了历史记录，包括微软亚洲研究院、北京大学、浙江大学、天津大学等在内的多家单位共有10多篇论文被收录。其中微软亚洲研究院共有5篇文章被收录。这些工作分别对社交媒体上话题的演变、交互，用户情感的传播等做了比较深入的研究。其中一篇与香港科技大学[屈华民](http://www.huamin.org/)教授[团队](http://vis.cse.ust.hk/)合作的文章[LoyalTracker:
+Visualizing Loyalty Dynamics in Search
+Engines](http://research.microsoft.com/en-us/um/people/ycwu/projects/loyaltracker.html)被评为IEEE
+VAST最佳论文提名奖 (VAST HONORABLE MENTION AWARD) 。
+
+
+<img src="/assets/vis2014_blog_images/image006.jpg" />
+图2. 华人学者在会场拍照留念
+{: style="text-align: center;"}
+<span> </span>
+
+
+***IEEE VIS会议的发展***
+
+三大可视化核心会议最早创建的是IEEE
+SciVis，其主要使用图形和动画技术对诸如医学、流体、化学以及天体等方面的数据进行可视化，采用的技术有直接体绘制、等值面重构等。然而，
+现实生活中还存在着其它大量抽象的结构化和非结构化数据如文本数据和网络数据等，于是在1995年IEEE
+InfoVis会议诞生了，其目的在于研究、设计和开发各类交互的可视化方法和技术，以有效地展示诸如高维抽象数据、网络数据以及文本数据等各类抽象数据，以方便人们直观地理解此类数据。近十年来，可视分析(Visual
+Analytics)逐渐兴起，研究人员发现通过结合可视化技术、机器学习以及人机交互等领域的方法，可以快速有效地从海量发展数据中整合有价值的信息，帮助用户解决特定领域内的问题，检验现有的预测，探索未知的趋势等。不同学科的交叉研究加速了可视分析的发展，并于2006年举办了第一届IEEE
+VAST。如今， SciVis、InfoVis和VAST成为了IEEE
+VIS的三大核心会议，每年同时同地举办。
+
+在今年的会议现场，笔者感受到InfoVis和VAST这两个会议相当热门，比如InfoVis分会场内不仅座无虚席，很多参会人员更是席地而作，聆听报告。我们也发现，相比较往年的工作，今年InfoVis和VAST中的不少工作所涉及的数据越来越复杂、数据量也越来越大，对数据的处理工作也越来越精细，这与当前如火如荼的大数据研究颇有异曲同工之味。为了让更多的人参与到会议中来，VAST更是在今年推出两个Tracks，高原创性的文章将被收录于TVCG
+Track，而其他部分高质量的文章将被收录于Conference Only Track。
+
+<img src="/assets/vis2014_blog_images/image007.jpg" />
+图3 InfoVis论文报告分会场的火爆场面
+{: style="text-align: center;"}
+<span> </span>
+
+从会议每年的最佳论文奖 (Best Paper
+Award)中，我们也可以窥视到大会的一些发展方向。如今年的InfoVis最佳论文[Multivariate
+Network Exploration and Presentation: From Detail to Overview via
+Selections and
+Aggregations](http://www.computer.org/csdl/trans/tg/preprint/06875972.pdf)，该工作首先展示给用户一副明细的多维网络图，并允许用户通过交互式的选择等操作对网络图进行聚集，以构造高层次结构的概览图。该论文挑战了可视化研究领军人物Ben
+Shneiderman所提出的可视化设计“魔咒”：首先查看概览，通过缩放和过滤，再继续按需查看细节（overview
+first, zoom and filter, then details on
+demand），他们所提出的方法是先查看网络图的细节内容，再通过交互生成概览图，并在该过程中帮助用户理解图的网络结构，且最终生成的概览图能让更广泛的受众所理解。笔者认为，该论文获得最佳论文奖，表明大会不仅仅希望研究人员能够在可视化设计上做出突破，更是在鼓励研究者参与到可视化领域的基础研究中去。另外，有意思的是该论文第一作者的导师Jarke
+J. van
+Wijk曾建议将他们所设计的可视化系统命名为Namredienhs，也就是Shneiderman这一名字反过来拼写。
+
+
+<img src="/assets/vis2014_blog_images/image008.png" />
+图4.通过选择和聚集操作，细节丰富的多维网络图被转变成为高层次结构的概览图
+{: style="text-align: center;"}
+<span> </span>
+
+
+
+***如何呈现一个优秀的可视化？***
+
+今年的主题演讲（Keynote）嘉宾来自迈阿密大学传播学院的[Alberto
+Cairo](http://com.miami.edu/profile/alberto-cairo)，他生动地展示了数据中知识的价值和有效传递这些知识的重要性，并指出一个优秀的可视化应该具有如下五个特征：
+
+1.  Truthful，可视化需要准确地还原数据本身；
+
+2.  Functionality，可视化需要清楚可见，并使用适当的工具构建；
+
+3.  Beautiful，可视化应该具有一定的美感，并可以让用户关注到有价值的相关信息；
+
+4.  Insightful，可视化能够揭示隐藏的知识；
+
+5.  Enlightening，可视化能帮助更有效地理解数据。
+
+他的演讲中有一句令笔者印象非常深刻的话，即Good answers lead to more good
+questions。可视化往往可以给很多问题提供直观且有效的回答，而在人们更直接地了解数据背后的故事以及建立起对数据更多的信心之后，人们就自然而然地对数据中隐藏的模式产生更多的疑问，从而以促进数据的进一步挖掘。
+
+[Alberto
+Cairo](http://com.miami.edu/profile/alberto-cairo)从设计角度的角度讲解了一个优秀的可视化所需要的元素，而在[Everything
+Except the Chart: Developing Complex Web-based
+Visualizations](http://dominikus.github.io/webvis-tutorial/www/#/1)这一教程(Tutorial)中，Dominikus
+Baur和Moritz
+Stefaner，这两位自由职业工作者站在工程师的角度，给观众展示了如何设计出优秀的在线可视化应用。他们在如何选择Web开发工具、如何使得可视化更容易被访问和分享、如何设计自适应(如移动设备)高性能的应用、如何让有障碍者如色盲群体更易于查看可视化结果、如何跟踪用户在使用可视化应用的过程等诸多方面进行了深入浅出的讲解。值得注意的是，该教程的[幻灯片](http://dominikus.github.io/webvis-tutorial/www/#/1)全部用HTML5完成并部署在演讲者个人站点上，参会人员在听取报告的同时，可直接在自己的设备上查看。
+
+会议闭幕前的主题演讲 (Capstone)
+邀请的是斯坦福大学的认知心理学教授[Barbara
+Tversky](http://www-psych.stanford.edu/~bt/index.html)，她提到绘画故事
+(pictorial storytelling)
+这一形式可有效地帮助人们去记述事件，其有诸如保持因果联系，容易记忆等优点。从认知学的角度看，这些也是一个优秀的可视化和可视分析系统不可缺少的因素。
+
+***跨学科合作研究***
+
+可视化和可视分析研究作为一门交叉学科，其非常注重学科间的合作和与领域专家的交流。在微软亚洲研究院今年发表在该会议的五篇文章中，都或多或少与相应领域如内的专家进行了合作。
+
+例如其中两个工作，即[OpinionFlow: Visual analysis of opinion diffusion
+on social
+media](http://research.microsoft.com/en-us/um/people/ycwu/projects/opinionflow.html)
+和[EvoRiver: Visual analysis of topic coopetition on social
+media](http://research.microsoft.com/en-us/um/people/ycwu/projects/evoriver.html)，我们均与与来自香港城市大学和南洋理工大学的传媒学专家紧密地合作，从他们的需求当中提炼出可视化设计的目标和原则，并且根据他们的反馈持续地改进可视化的方法。OpinionFlow
+研究用户的观点在社交媒体中发展传播的过程，而EvoRiver则分析和理解信息在社交媒体上交互的动态演变过程。信息交互的可视分析旨在通过可视化的形式揭示信息在社交媒体这一虚拟空间上的交互过程。信息可以是单条微博，也可以是大量微博构成的一个话题。信息交互的形式是多种多样的，如社交媒体中一个话题可以通过压制另外一个话题以提高本话题的用户关注度（话题竞争），同样话题之间也可以互相协同一起来吸引更多用户的关注（话题合作）。我们设计并实现的EvoRiver，可用于可视化和理解话题在话题领袖作用下的复杂的、动态的竞争合作情况。如下图所示，每条带子表示一个话题，橙色的带子表示该话题倾向于竞争，绿色的带子表示该话题倾向于合作，带子从橙色到绿色的转换意味着对应的话题从倾向于竞争转变向倾向于合作。通过适当的布局算法，EvoRiver展示了话题在社交媒体中动态变化的过程。
+
+<img src="/assets/vis2014_blog_images/image009.png" />
+图5. EvoRiver用于 展示社交媒体中话题合作竞争的动态变化
+{: style="text-align: center;"}
+<span> </span>
+
+
+获得VAST Best Paper Honorable Mention Award的LoyalTracker: Visualizing
+Loyalty Dynamics in Search
+Engines则是与微软搜索部门合作的成果。通过与搜索引擎领域相关的专家合作，我们设计了如下的动态流图（Flow
+View）以展现用户在使用不同搜索引擎时的忠诚度变化。图中颜色的深浅用于代表用户忠诚度的高低，流图中每条带子的宽度表示相应忠诚度下用户的数量。通过在带子上添加分支，LoyalTracker可以帮助专家有效地理解当前搜索引擎中用户忠诚度的分布和不同忠诚度的用户在使用搜索引擎时候的动态转变行为。
+
+<img src="/assets/vis2014_blog_images/image010.png" />
+图6. LoyalTracker用于展示用户在使用搜索引擎时忠诚度的动态变化
+{: style="text-align: center;"}
+<span> </span>
+
+
+
+另外，社会化应用如社交媒体的可视分析也逐渐成为热点，今年大会上更是将此作为一独立的论文专题（paper
+session）。
+
+文本可视化分析的工作则将可视化技术和数据挖掘技术进行了深度的集成。例如TopicPanorama通过从不同数据源（新闻，微博等）抽取话题，构建网络，从而给人们展示了一个事件全景图。通过构建全景图，人们才能很容易发现怎样的话题是各个数据源独有的。或者即使是一些共有的话题，不同的数据源又有怎样的侧重点。
+
+<img src="/assets/vis2014_blog_images/image011.png" />
+图7.用TopicPanorama展示了来时新闻（粉色）和微博（黄色）的话题分布以及话题之间的关系
+{: style="text-align: center;"}
+<span> </span>
+
+
+
+RoseRiver则深度整合了话题树的技术，将话题随时间的变化表示成了一条条横向流动的河流（图9）。在这显示中，不同的颜色表示了不同的话题。通过观察河流的流向，宽度，颜色的变化，人们得以更直观的理解话题的动态性。
+
+<img src="/assets/vis2014_blog_images/image012.png" />
+图8. 用RoseRiver表示的棱镜事件在前两个月的话题变化
+{: style="text-align: center;"}
+<span> </span>
+
+
+***其他独具特色的项目：***
+
+***VIS 25周年活动***
+
+为了庆祝IEEE VIS
+25周年的到来，今年特别举办了一系列的活动。如下图墙上展示的是VIS
+25年来最具影响力或最具创造力或应用最广的一些可视化的年表。此外，主办方还提供了一个[在线的可视化年表](http://www.aviz.fr/~bbach/vis25timeline/)以供用户查阅。
+
+<img src="/assets/vis2014_blog_images/image013.jpg" />
+图9. VIS 25周年可视化年表
+{: style="text-align: center;"}
+<span> </span>
+
+
+除了这个年表之外，VIS
+25周年委员会还组织设计实现了一[在线工具](http://www.cc.gatech.edu/gvu/ii/citevis/VIS25/)用于可视化25年来所有发表在VIS上的论文之间的相互引用情况。如下图所示，高亮蓝色圆圈的大小用来表示发表在2013年InfoVis上
+(横轴) 的论文引用发表在2012年InfoVis上
+(纵轴)的论文的数量。在InfoVis中，我们可以看到，发表在某年的论文大都是引用该年前几年的文章，这也是会议朝着健康方向发展的一个标志。
+
+![](/assets/vis2014_blog_images/image014.png)
+图10. VIS 25年内所有发表文章的相互引用情况
+{: style="text-align: center;"}
+<span> </span>
+
+
+
+在会议闭幕后的第一天，将会举行一个“[VIS环法自行车](http://www.gicentre.net/velo-club-de-vis)
+(Tour de VIS)
+”的骑行活动，与会者可以自愿报名，参加预先设定的骑行路线，路线总长约75公里，总爬坡高度达850m，且平均时速需保持20公里每小时。
+
+![](/assets/vis2014_blog_images/image015.jpg)
+图11.
+参加VIS环法自行车的与会者们
+{: style="text-align: center;"}
+<span> </span>
+
+
+
+***VAST Challenge***
+
+会议第一天的[VAST
+Challenge](http://vacommunity.org/VAST+Challenge+2014)是大会很有意思的一个环节，一年一度的VAST
+Challenge要求可视分析研究人员，开发人员和设计师使用他们最有效的工具和技术，来解决一系列包含了现实场景、数据和任务的问题。参赛者将解决方案撰写成文章，并提交至大会，优秀的解决方案并在大会上授予相应的奖项。今年的VAST
+Challenge的题目是寻找在某公司庆功宴上突然失踪的员工。研究人员需要通过分析员工的邮件记录数据、移动数据和微博数据来推断处谁失踪了，谁为失踪事件负责以及失踪事件背后的动机是什么。国内北京大学，天津大学和中南大学等均参与了这次VAST
+Challenge，并获得了不同的奖项，如杰出效果展示奖等(Outstanding Results
+Presentation Supported by
+Visualizations)。下图就是天津大学和中南大学合作设计实现的多视图可视分析系统MEAT，用于探索此次失踪事件背后的故事。
+
+![](/assets/vis2014_blog_images/image016.png)
+图12. MEAT可视分析系统界面，不同视图之间可以协同操作以辅助数据探索
+{: style="text-align: center;"}
+<span> </span>
+
+
+
+***Blind Lunch***
+
+大会还设置了Blind
+Lunch这一非正式活动，在该活动中，刚起步的研究员或者研究生可以与富有经验的可视化研究人员共进午餐，讨论各式各样的话题，诸如工业界与学术界的对比等。
+
+***Bertin Exhibit***
+
+这次大会还展出了著名的制图学家Jacques Bertin生前所不为人知的工作，其中很有意思的是他所设计的可重排序矩阵（reorderable matrix）的物理模型。可重排序矩阵是该领域一经典的可视化设计，其通过交换行和列来发现不同数据属性之间的关系以揭露数据中隐藏的模式。
+
+
+
+我们可以看到，可视化领域的先辈们在没有计算机的情况下，实现这些可交互的可视化原型是相当不容易的。
+
+![](/assets/vis2014_blog_images/image017.png)
+图13. 基于Jacques Bertin的reorderable matrix所实现的物理模型
+{: style="text-align: center;"}
+<span> </span>
+
+注1：部分图片来自于互联网
+
+注2：IEEE VIS
+2014的论文报告视频均可以在<http://vimeo.com/vgtcommunity>在线观看。

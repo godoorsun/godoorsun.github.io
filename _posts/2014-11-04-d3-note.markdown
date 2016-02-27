@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "D3 note"
+date:   2015-11-05 13:34:44 +0100
+categories: blog uncategorized
+---
+
+
+
+其他的可视化的库或者在D3上二次开发的库：
+http://dc-js.github.io/dc.js/   
+基于http://square.github.io/crossfilter/和D3开发多维过滤可视化库
+
+
+基于D3开发的库的列表，值得挖一下：
+https://gist.github.com/widged/6820559
+
+
+不用编程的，express 语法的可视化库:
+http://vega.github.io/vega/

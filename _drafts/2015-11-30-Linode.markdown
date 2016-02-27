@@ -1,0 +1,266 @@
+---
+layout: post
+title:  "Linode"
+date:   2015-11-11 13:34:44 +0100
+categories: blog uncategorized
+---
+
+
+#----------------------------------------------------------------------------------
+
+
+服务器端的配置（需要安装Java）：
+
+0）安装Java
+First use command
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+Then in terminal
+sudo apt-get install oracle-java8-installer
+When there are multiple Java installations on your System, the Java version to use as default can be chosen. To do this, execute the following command.
+sudo update-alternatives --config java
+
+1）配置linux ssh免密码登录，保证之后的rsync工具可以不会因为输入密码而stuck，做的主要就是上传id_rsa.pub到服务器， 参考：https://www.google.com.sg/?gfe_rd=cr&ei=S9yHVt-qF4vBuASw36fgAw&gws_rd=ssl#newwindow=1&q=linux+ssh+%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95
+windows下面使用ssh，可以使用putty，也可以用我发给你的clien/cwRsync/目录中的ssh.exe
+
+2）服务器创建如下路径：
+/home/TwitterFetcher/FetchedData/
+/home/TwitterFetcher/FetchedData/Data/
+/home/TwitterFetcher/FetchedData/Log/
+
+3）在传给你的部署包中/server/oauth/中，将你找到的那些key分别保存到twitter4j_1.properties, twitter4j_2.properties, twitter4j_3.properties....twitter4j_40.properties即可，没有新建文件即可。
+
+4) 服务器安装JAVA，将server里的文件全部传到/home/TwitterFetcher/中（包括程序，数据文件，地图分割和oauth，以及lib文件），最后逐条执行如下命令，
+cd /home/TwitterFetcher/
+screen -d -m java -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
+screen -d -m java -jar /home/TwitterFetcher/DiskSpaceMonitor.jar 0.8 /home/TwitterFetcher/FetchedData/ 
+也可以保存至sh文件，运行即可，另外，可以将这个sh文件设为开机启动，这样Linode服务器出错了导致重启，我们仍然可以继续抓数据。
+就可以了。
+
+
+客户端的配置：
+1）在TwitterRSync.properties中，如果你用的是windows客户端的话，保证配置文件中的如下路径存在，或者替换为其他盘符即可。
+数据保存路径：localDataPathWin = D:\\TwitterSync\\SyncData\\
+数据日志保存路径：localLogMd5PathWin = D:\\TwitterSync\\SyncData\\Log\\
+
+IP：173.255.210.47  （如果IP地址换了，修改TwitterRSync.properties中的ip地址即可）
+
+
+2）客户端安装Java，将client中的文件放到D:\\TwitterSync\\中，修改rsync_on_windows.bat文件中开头的盘符目录即可自动连接到服务器拉数据回来，最后运行即可，建议rsync_on_windows.bat设置为开机自动启动。
+
+3）客户端机器最好在BIOS中设置断电通电后开机自启动。
+
+如果有linux命令不熟悉的，可以问下google或者xiexiao或者我。
+
+
+#----------------------------------------------------------------------------------
+
+
+VPS上shadowsocks配置：
+sudo apt-get update
+sudo apt-get install python-pip
+sudo pip install shadowsocks
+然后运行如下命令即可：
+/usr/local/bin/ssserver -p port_num -k password -m aes-256-cfb 
+
+My Linode VPS IP: 173.255.210.47
+EvoBurst VPS IP: 45.43.221.55
+
+配置参考文件：
+https://plus.google.com/103234343779069345365/posts/Xce4EJpLGhX
+https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E
+
+
+#----------------------------------------------------------------------------------
+
+注意事项：
+1）如果连接不稳定，可以更换SSH端口，因为默认的SSH端口（22）很容易被封掉，也需要更改默认的shadowsocks端口，也很容易被封掉。同样，shadowsocks也可以更换端口或者更换加密方式或者加入多一层的流量混淆，比如修改至常用端口3389，可能GFW有端口白名单吧。
+修改过程：
+1、修改配置文件：/etc/ssh/sshd_config ，找到#port 22 （如图）
+2. 重启ssh服务：sudo service ssh restart
+
+使用ssh -v user@host
+输入登录过程的debug信息，登录不了可以查看/var/log/auth.log里的日志
+
+2）国内不同地区不同线路连接VPS网络速度均不一样，可以多尝试一下，比如实验室的网络ping不通 新加坡的linode；而家里的网络ping新加坡的linode比较快，比tokyo的还快。
+
+3）Rsync/scp命令：
+支持断点续传
+rsync -azvP root@173.255.210.47:/home/TwitterFetcher/FetchedData/2015-12-02.txt /Users/sungodoor/Desktop/2015-12-02.txt
+rsync启动其他端口的ssh
+rsync -e 'ssh -p 16100' /home/xxx.xxx root@45.43.221.55:/home/
+
+rsync参考资料：
+http://emacsist.github.io/2015/08/31/Linux%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6%E5%B7%A5%E5%85%B7rsync/
+https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps
+
+使用scp上传（目录）：
+scp -r /Users/sungodoor/Documents/workspace/TwitterStreamFetch/oauth root@173.255.210.47:/home/TwitterFetcher
+
+4）screen主要使用方法
+1.运行screen，然后在新出来的窗口中运行程序即可。 
+2.按Ctrl+a+d实现脱离该会话（但是程序还在运行）
+3.通过screen -ls 查看当前的screen会话
+4.输入screen -r #id# 重新进入该会话。
+5.同样输入exit退出screen会话
+参考资料：使用 screen 管理你的远程会话  https://www.ibm.com/developerworks/cn/linux/l-cn-screen/
+
+5）
+查看剩余空间：
+df -hl
+
+6）使用Linode抓取Twitter的时候注意时区的设置，一般设置为GMT0即可。保证服务器上的时区也是GMT0，即和从twitter获得的时区一致。
+
+7）ssh免密码登录
+1、本地生成一对秘钥文件(公钥和私钥);
+$ ssh-keygen
+#以上命令等价于 ssh-keygen -t rsa
+#-t:指定密钥的类型,默认为SSH-2 的rsa类型;
+运行上面的命令后，系统会出现一系列提示，可以一路回车。特别说明，其中有一个问题是，要不要对私钥设置口令（passphrase），如果担心私钥的安全，可以设置一个。运行结束以后，会在 ~/.ssh/ 目录下新生成两个文件：id_rsa.pub和id_rsa。前者公钥，后者是私钥。
+ 
+2、将公钥传送到远程主机host上面;
+$ ssh-copy-id user@host
+经过以上两步之后，就可以实现无密码远程登录了(远程主机将用户的公钥保存在~/.ssh/authorized_keys文件中)。 
+
+3.记住 authorized_keys是文件，不是文件夹。惨痛的教训。
+如果ssh远程登录出现permission denied，而无法挽救的时候，可以在linode的网页版本登录，修复。
+
+
+8) VI 编辑操作
+ESC切换到命令模式
+i插入
+u撤销
+x删除
+
+:w 保存文件但不退出vi 
+:w file 将修改另外保存到file中，不退出vi 
+:w! 强制保存，不推出vi
+:wq 保存文件并退出vi 
+:wq! 强制保存文件，并退出vi
+:q 不保存文件，退出vi
+:q!不保存文件，强制退出vi 
+:e! 放弃所有修改，从上次保存文件开始再编辑
+ 
+
+
+9)开机自动启动设置：
+写个开机自动启动脚本：TwitterFetcherStartup.sh，并且设置为可执行(chmod)，内容：
+#!/bin/sh
+cd /home/TwitterFetcher/
+screen -d -m java -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
+screen -d -m java -jar /home/TwitterFetcher/DiskSpaceMonitor.jar 0.8 /home/TwitterFetcher/FetchedData/ 
+screen -d -m /usr/local/bin/ssserver -p 3389 -k 62995739 -m aes-256-cfb
+
+---更新，直接在TwitterFetcherStartup.sh执行就好了。
+
+最后将/home/TwitterFetcher/TwitterFetcherStartup.sh放置到开机启动项目里面,即写入到/etc/rc.local
+
+
+
+
+10)在服务器上跑的程序，可以write exception to file。
+
+
+9）其他操作：
+
+
+md5sum（linux）或者md5（osx）工具查看是否对应
+
+使用CWRSYNC的时候一定要注意路径是否设置正确，ssh需要的路径是否正确。；
+参考CWRSYNC.cmd文件的指令，可以拷贝到代码中运行。
+
+
+强行关闭进程，参数-9：
+sudo kill -9 15627
+
+
+VPS review:
+https://gist.github.com/weakish/911335
+
+#----------------------------------------------------------------------------------
+
+其他尝试过的方法：
+从服务器上传东西
+1）通过百度盘API，百度盘python接口，或者安装百度盘同步软件上传。
+
+*百度盘上传脚本： https://github.com/oott123/bpcs_uploader
+/home/uploader/baidupan_uploader/bpcs_uploader.php upload 2015-12-02.txt 2015-12-02.txt
+北京时间晚上传的时候很快,几M每秒，白天的时候很慢，只有几百KB。问题是有时候经常会API calling faild.
+
+*快盘上传脚本（速度没有百度盘块）：http://wangheng.org/
+/home/uploader/kuaipan_uploader/kuaipan_uploader-master/kuaipan_uploader.sh upload  2015-12-02.txt 2015-12-02.txt
+
+*百度盘的单脚本上传：
+scp /Users/sungodoor/Desktop/panbaidu/pan.baidu.com.py root@173.255.210.47:/home/uploader/panbaidu_py
+chmod +x ./pan.baidu.com.py
+apt-get install python-pip
+sudo python ./pan.baidu.com.py upload *.* TwitterUploader/
+如果出现问题，可参考：
+http://www.sneaku.com/2015/09/30/nsxramlclient-on-ubuntu-issues/
+
+
+2）研究了很多版本的java版本的sync，传输工具等等，貌似都不怎么靠谱。
+#----------------------------------------------------------------------------------
+
+
+windows上面的sync过程。
+拷贝cwrsync，TwitterRSync已经配置文件到windows机器
+然后keygen建立安全无密码连接。
+运行rsync-on-windows.bat
+注意set home的=号前后不要有空格
+然后执行bat命令即可，如果不行的话，
+在命令行中cd到当前目录，然后执行bat文件
+
+如果出现key的权限太过于open的提示（可能是windows8里面的microsoft账户也可读），那么可以将key的读取设置为Users可读即可。
+
+*ip地址修改
+修改的话，需要修改配置文件中的ip地址。
+
+
+ 
+
+
+测试了一个数据集，大概8%的数据集是重复的。
+丢失率大概7.1E-4
+
+
+
+7940695tweets vs 8062289tweets
+
+
+ 
+
+ 
+
+
+
+---------------------------
+配置 obfsproxy 服务端
+apt-get install gcc python-pip python-dev
+pip install obfsproxy
+obfsproxy --data-dir=/tmp/scramblesuit-server scramblesuit --password=TRYINGTOBYPASSTHEGREATFIREWALL22 --dest=127.0.0.1:3389 server 0.0.0.0:33899
+
+配置客户端：
+obfsproxy scramblesuit --password=TRYINGTOBYPASSTHEGREATFIREWALL22 --dest=173.255.210.47:33899 client 127.0.0.1:10800
+
+混淆过之后，是过了一段时间后才被封。。。ping不通。
+
+----------
+mac版本的安装torbrowser，然后提出出安装目录下的obfs4proxy即可混淆：
+之后使用obfs4proxy混淆：
+https://mashiro.xyz/index.php/2015/09/11/how-to-use-ptproxy/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/usr/local/bin/ssserver -p 16105 -k zjutvis -m aes-256-cfb 
+/usr/local/bin/ssserver -p 16101 -k 62995739 -m aes-256-cfb 
