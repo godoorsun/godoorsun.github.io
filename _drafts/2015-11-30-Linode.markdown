@@ -32,7 +32,7 @@ windows下面使用ssh，可以使用putty，也可以用我发给你的clien/cw
 
 4) 服务器安装JAVA，将server里的文件全部传到/home/TwitterFetcher/中（包括程序，数据文件，地图分割和oauth，以及lib文件），最后逐条执行如下命令，
 cd /home/TwitterFetcher/
-screen -d -m java -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
+screen -d -m java -Duser.timezone=UTC -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
 screen -d -m java -jar /home/TwitterFetcher/DiskSpaceMonitor.jar 0.8 /home/TwitterFetcher/FetchedData/ 
 也可以保存至sh文件，运行即可，另外，可以将这个sh文件设为开机启动，这样Linode服务器出错了导致重启，我们仍然可以继续抓数据。
 就可以了。
@@ -51,6 +51,20 @@ IP：173.255.210.47  （如果IP地址换了，修改TwitterRSync.properties中�
 3）客户端机器最好在BIOS中设置断电通电后开机自启动。
 
 如果有linux命令不熟悉的，可以问下google或者xiexiao或者我。
+
+4)开机自动启动设置：
+写个开机自动启动脚本：TwitterFetcherStartup.sh，并且设置为可执行(chmod)，内容：
+#!/bin/sh
+cd /home/TwitterFetcher/
+screen -d -m java -Duser.timezone=UTC -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
+screen -d -m java -jar /home/TwitterFetcher/DiskSpaceMonitor.jar 0.9 /home/TwitterFetcher/FetchedData/ 
+screen -d -m /usr/local/bin/ssserver -p 3389 -k 62995739 -m aes-256-cfb
+
+---更新，直接在TwitterFetcherStartup.sh执行就好了。
+
+最后将/home/TwitterFetcher/TwitterFetcherStartup.sh放置到开机启动项目里面,即写入到/etc/rc.local
+
+
 
 
 #----------------------------------------------------------------------------------
@@ -147,7 +161,7 @@ x删除
 写个开机自动启动脚本：TwitterFetcherStartup.sh，并且设置为可执行(chmod)，内容：
 #!/bin/sh
 cd /home/TwitterFetcher/
-screen -d -m java -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
+screen -d -m java -Duser.timezone=UTC -Xms512m -Xmx2g -jar /home/TwitterFetcher/TwitterFetcher.jar
 screen -d -m java -jar /home/TwitterFetcher/DiskSpaceMonitor.jar 0.8 /home/TwitterFetcher/FetchedData/ 
 screen -d -m /usr/local/bin/ssserver -p 3389 -k 62995739 -m aes-256-cfb
 
@@ -260,7 +274,41 @@ https://mashiro.xyz/index.php/2015/09/11/how-to-use-ptproxy/
 
 
 
-
+45.43.221.55
 
 /usr/local/bin/ssserver -p 16105 -k zjutvis -m aes-256-cfb 
 /usr/local/bin/ssserver -p 16101 -k 62995739 -m aes-256-cfb 
+
+
+
+
+我需要拷贝的是UTC文件
+一、查看和修改Linux的时区
+1. 查看当前时区
+命令 ： "date -R"
+2. 修改设置Linux服务器时区
+方法 A
+命令 ： "tzselect"
+方法 B 仅限于RedHat Linux 和 CentOS
+命令 ： "timeconfig"
+方法 C 适用于Debian
+命令 ： "dpkg-reconfigure tzdata"
+3. 复制相应的时区文件，替换系统时区文件；或者创建链接文件
+cp /usr/share/zoneinfo/$主时区/$次时区 /etc/localtime
+例如：在设置中国时区使用亚洲/上海（+8）
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+二、查看和修改Linux的时间
+1. 查看时间和日期
+命令 ： "date"
+2.设置时间和日期
+例如：将系统日期设定成2009年11月3日的命令
+命令 ： "date -s 11/03/2009"
+将系统时间设定成下午5点55分55秒的命令
+命令 ： "date -s 17:55:55"
+3. 将当前时间和日期写入BIOS，避免重启后失效
+命令 ： "hwclock -w"
+注：
+date
+不加参数可以直接看到当前日期时间
+cal
+不加参数可以直接看到本月月历
