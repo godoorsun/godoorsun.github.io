@@ -79,23 +79,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_drafts/2015-11-30-Linode.markdown",
-			"settings":
-			{
-				"buffer_size": 7176,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "老婆我爱你:D",
-			"settings":
-			{
-				"buffer_size": 7,
-				"line_ending": "Unix",
-				"name": "老婆我爱你:D"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -218,11 +201,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github",
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_drafts",
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_includes",
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_layouts",
-		"/Users/sungodoor/百度云同步盘/06.PersonalSite/github/_posts"
+		"/D/坚果云/我的坚果云/06.PersonalSite/github"
 	],
 	"file_history":
 	[
@@ -469,9 +448,9 @@
 			"textheig",
 			"text",
 			"te'x't'hei'g'h't",
-			"1825	--------	3877",
-			"1804	--------	3867",
-			"1804	--------	3621",
+			"1825\t--------\t3877",
+			"1804\t--------\t3867",
+			"1804\t--------\t3621",
 			"United States",
 			"proceeding",
 			"direct",
@@ -526,65 +505,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_drafts/2015-11-30-Linode.markdown",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 7176,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7115,
-								7115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 110166.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7,
-								7
-							]
-						],
-						"settings":
-						{
-							"auto_name": "老婆我爱你:D",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

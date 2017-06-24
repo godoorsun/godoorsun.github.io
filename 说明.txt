@@ -1,0 +1,1 @@
+_site 是jekyll生成的target目录，在gitignore里设置过了，不会被commit到github上去。
