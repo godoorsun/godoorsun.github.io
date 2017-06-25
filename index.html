@@ -25,6 +25,17 @@
     function disableHighlight(){
     $('.category').removeClass('highlightedCategory'); 
     }
+
+    function onHover()
+    {
+        $("#myself").attr('src', 'assets/homepage_images/guodao3.jpg');
+    }
+
+    function offHover()
+    {
+        $("#myself").attr('src', 'assets/homepage_images/guodao.png');
+    }
+
     </script>
 </head>
 
@@ -77,10 +88,11 @@
             </div>
         </div>
 
-        <div class="portrait"><img src="assets/homepage_images/guodao.png" width="220px"
-        height="339px"> <img src="assets/homepage_images/vis_of_my_papers.jpg" width="748px"
-        height="322px" style="margin-top:1px" alt="Word cloud of my papers until 2014" title="Word cloud of my papers until 2014" ></div>
-
+        <div class="portrait">
+        <img id="myself" src="assets/homepage_images/guodao.png" width="220px"  height="339px"  style=' border:1.5px solid #333333' onmouseover="onHover();" onmouseout="offHover();" >
+        <img src="assets/homepage_images/vis_of_my_papers.jpg" width="748px"
+        height="322px" style="margin-top:1px" alt="Word cloud of my papers until 2014" title="Word cloud of my papers until 2014" >
+        </div>
         <div class="bio">
             <div id="bio" style="font-size:28px;">
                 <h4 class = "item"  >Bio:</h4>
@@ -131,7 +143,11 @@
                             </div>
 
                             <div class="venue">
-                                ACM Transactions on Intelligent Systems and Technology, to appear, 2017
+                                ACM Transactions on Intelligent Systems and Technology, to appear, 2017                                
+                            </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
                             </div>
                         </td>
                     </tr>
@@ -153,6 +169,10 @@
                             <div class="venue">
                                 IEEE Transactions on Visualization and Computer Graphics, 23(5):1506-1519, 2017
                             </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
+                            </div>
                         </td>
                     </tr>
 
@@ -173,6 +193,10 @@
                             <div class="venue">
                                 IEEE Transactions on Multimedia, 18(11):2271-2281, 2016
                             </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
+                            </div>
                         </td>
                     </tr>
 
@@ -191,6 +215,10 @@
 
                             <div class="venue">
                                 IEEE Pacific Visualization Symposium, 2016, to appear.
+                            </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
                             </div>
                         </td>
                     </tr>
@@ -214,6 +242,10 @@
                             <div class="venue">
                                 IEEE Transactions on Visualization and Computer Graphics, 20(12):1753-1762, 2014 
                             </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
+                            </div>
                         </td>
                     </tr>
 
@@ -235,6 +267,10 @@
 
                             <div class="venue">
                                 IEEE Pacific Visualization Symposium, pages 185-192, 2014
+                            </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
                             </div>
                         </td>
                     </tr>
@@ -259,6 +295,10 @@
                                 Journal of Computer Science and Technology,
                                 28(5):852-867, 2013
                             </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
+                            </div>
                         </td>
                     </tr>
 
@@ -281,6 +321,10 @@
                                 SCIENCE CHINA Information Sciences, 56(5):1-13,
                                 2013
                             </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
+                            </div>
                         </td>
                     </tr>
 
@@ -302,6 +346,10 @@
                             <div class="venue">
                                 Journal of Computer Aided Design＆ Computer
                                 Graphics, 25(11):1606-1613, 2013
+                            </div>
+                            <div>
+                                 <img src="assets/homepage_images/pdf.png" width="35" height="35">
+                                 <img src="assets/homepage_images/bibtex.jpg" width="35" height="35">
                             </div>
                         </td>
                     </tr>
