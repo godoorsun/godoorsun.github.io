@@ -26,7 +26,7 @@ categories: blog uncategorized
   * 插入公式对齐的情况，可以使用表格结构，标号右对齐（https://support.microsoft.com/en-us/kb/123430）
 
 
-> 其他参考的：
+> 其它参考的：
 
 
 1. 在word中也可以使用bibtex，http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html
