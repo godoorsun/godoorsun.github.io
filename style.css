@@ -13,6 +13,13 @@
     margin-bottom: 20px;
     }
     
+    .content-wrapper{
+        width:1080px;
+        margin:auto;
+        margin-top: 50px;
+        text-align:center;
+        display: block；
+    }
     .category{
     margin-bottom: 0px;
     margin-top:0px;
@@ -35,13 +42,6 @@
     color: #0b79e5;
     }
 
-    .content-wrapper{
-        width:1000px;
-        margin:auto;
-        margin-top: 50px;
-        text-align:center;
-        display: block；
-    }
 
     .portrait {
        display:inline-block;
