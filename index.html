@@ -28,12 +28,17 @@
 
     function onHover()
     {
-        $("#myself").attr('src', 'assets/homepage_images/guodao3.jpg');
+        $("#myself").attr('src', 'assets/homepage_images/guodao4.jpg');
+        $("#myself").attr('width', '220px');
+        $("#myself").attr('height', '283px');
+        //1.54
     }
 
     function offHover()
     {
         $("#myself").attr('src', 'assets/homepage_images/guodao.png');
+        $("#myself").attr('width', '220px');
+        $("#myself").attr('height', '283px');
     }
 
     </script>
@@ -89,7 +94,7 @@
         </div>
 
         <div class="portrait">
-        <img id="myself" src="assets/homepage_images/guodao.png" width="220px"  height="339px"  style=' border:1.5px solid #333333' onmouseover="onHover();" onmouseout="offHover();" >
+        <img id="myself" src="assets/homepage_images/guodao.png" width="220px"  height="283px"    onmouseover="onHover();" onmouseout="offHover();" >
         <img src="assets/homepage_images/vis_of_my_papers.jpg" width="748px"
         height="322px" style="margin-top:1px" alt="Word cloud of my papers until 2014" title="Word cloud of my papers until 2014" >
         </div>
