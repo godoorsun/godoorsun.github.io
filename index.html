@@ -44,47 +44,55 @@
     </script>
 </head>
 
-<body>
-    <div class="navbar">
-        <!--
-        <div class="nav-profile">
-            Guodao Sun
-        </div>
+<body> 
+	    <div class="navbar">
 
-        -->
+	        <div class="nav-item nav-item-home category highlightedCategory"
+	        onclick=
+	        "disableHighlight(); $('.nav-item-home').addClass('highlightedCategory');document.getElementById('bio').scrollIntoView(); scrollBy(0, offset);">
+	        About
+	        </div><!--
+	        <div class="nav-item nav-item-research category" onclick=
+	        "disableHighlight(); $('.nav-item-research').addClass('highlightedCategory'); window.location.href='Research.htm'">
+	        Research
+	        </div>
+	        -->
 
-        <div class="nav-item nav-item-home category highlightedCategory"
-        onclick=
-        "disableHighlight(); $('.nav-item-home').addClass('highlightedCategory');document.getElementById('bio').scrollIntoView(); scrollBy(0, offset);">
-        About
-        </div><!--
-        <div class="nav-item nav-item-research category" onclick=
-        "disableHighlight(); $('.nav-item-research').addClass('highlightedCategory'); window.location.href='Research.htm'">
-        Research
-        </div>
-        -->
+	        <div class="nav-item category nav-item-pub " onclick=
+	        "disableHighlight(); $('.nav-item-pub').addClass('highlightedCategory'); document.getElementById('publication').scrollIntoView(); scrollBy(0, offset);">
+	        Publications
+	        </div>
 
-        <div class="nav-item category nav-item-pub " onclick=
-        "disableHighlight(); $('.nav-item-pub').addClass('highlightedCategory'); document.getElementById('publication').scrollIntoView(); scrollBy(0, offset);">
-        Publications
-        </div>
+	        <div class="nav-item category nav-item-cv" onclick=
+	        "disableHighlight(); $('.nav-item-cv').addClass('highlightedCategory'); document.getElementById('service').scrollIntoView(); scrollBy(0, offset);">
+	        Service
+	        </div>
+	 
+	        <div class="nav-item category nav-item-Misc" onclick=
+	        "disableHighlight(); $('.nav-item-Misc').addClass('highlightedCategory'); window.location.href='misc.html'">
+	        Misc
+	        </div>
 
-        <div class="nav-item category nav-item-cv" onclick=
-        "disableHighlight(); $('.nav-item-cv').addClass('highlightedCategory'); document.getElementById('service').scrollIntoView(); scrollBy(0, offset);">
-        Service
-        </div>
 
-<!--
-        <div class="nav-item category nav-item-gallery" onclick=
-        "disableHighlight(); $('.nav-item-gallery').addClass('highlightedCategory'); window.location.href='gallery.html'">
-        Gallery
-        </div>
--->
-        <div class="nav-item category nav-item-Misc" onclick=
-        "disableHighlight(); $('.nav-item-Misc').addClass('highlightedCategory'); window.location.href='misc.html'">
-        Misc
-        </div>
-    </div>
+	    </div>
+
+
+	    <div class="navbar2">
+	    	<a class = "alanguage" href="index_cn.html" > 
+	    		<div class="nav-item category2">
+	    			中文
+	    		</div>
+	    	</a>
+	    	<div class="nav-item category2"   >
+	    		|
+	    	</div>
+	    	<a  class = "alanguage"  href="index.html"> 
+	    		<div class="nav-item category2"   >
+	    		English
+	    		</div>
+	    	</a>
+	    </div> 
+
 
     <div class="content-wrapper">
         <div>
@@ -104,8 +112,7 @@
             </div>
             <div style="font-size:20px; -webkit-font-smoothing: antialiased;">
                 I'm currently an assistant professor at College of Information
-                Engineering, <a href="http://www.zjut.edu.cn">Zhejiang
-                University of Technology</a>, Hangzhou, China. 
+                Engineering, Zhejiang University of Technology, Hangzhou, China. 
                 I received B.Sc. in computer science and technology (2010), and Ph.D. degree in January, 2016 under the supervision of Ronghua Liang.
                 During my Ph.D study, I studied and worked as a visiting
                 intern at Department of Computer Science and Engineering,
@@ -115,9 +122,16 @@
                 July 2013, a research intern at Internet Graphics Group,
                 Microsoft
                 Research Asia with <a href= "http://www.ycwu.org">Yingcai Wu</a> from July 2013 to January 2015,
-                and a visiting intern at The Institute for Visualization and Interactive Systems (<a href="http://www.vis.uni-stuttgart.de/en/institute.html">VIS</a>) headed by <a href="http://www.vis.uni-stuttgart.de/en/institute/people/thomas-ertl.html">Thomas Ertl</a> at the University of Stuttgart from July 2015 to December 2015.
+                and a visiting intern at The Institute for Visualization and Interactive Systems headed by <a href="http://www.vis.uni-stuttgart.de/en/institute/people/thomas-ertl.html">Thomas Ertl</a> at the University of Stuttgart from July 2015 to December 2015.
                 At present, I'm interested in exploring large data using interactive visual analytics with focus on data such as urban data (vehicles, human movement, environment etc.), social data (social media, social network etc.).
             </div>
+
+<!--
+            <div style="font-size:20px; -webkit-font-smoothing: antialiased;">
+					孙国道，浙江工业大学信息工程学院校聘副教授。2016年获工学博士学位，博士求学期间前往香港科技大学(2013.02-2013.07)、微软亚洲研究院(2013.07-2015.01)、德国斯图加特大学(2015.07-2015.12)等高校和研究机构展开访问和交流，曾获得微软亚洲研究院“明日之星”等称号。从事大数据挖掘、可视化和可视分析方面的研究，在可视化领域相关期刊和会议发表论文20余篇，包括IEEE TVCG、IEEE VIS、IEEE TMM、ACM TIST等，并担任IEEE Pacific VIS、VINCI、ChinaVis等国际学术会议的程序委员会委员和多个国内外著名期刊和会议的审稿人，主持国家自然科学基金等项目。
+            </div>
+-->
+
 
 
 
@@ -131,7 +145,7 @@
                         
                         <td>
                             <div class="title">
-                                <a>SocialWave: Visual Analysis of Spatio-temporal Diffusion of Information on Social Media</a>
+                                SocialWave: Visual Analysis of Spatio-temporal Diffusion of Information on Social Media
                             </div>
 
                             <div class="author">
@@ -156,7 +170,7 @@
                         
                         <td>
                             <div class="title">
-                                <a>StreamExplorer: A Multi-Stage System for Visually Exploring Events in Social Streams</a>
+                                StreamExplorer: A Multi-Stage System for Visually Exploring Events in Social Streams
                             </div>
 
                             <div class="author">
@@ -180,7 +194,7 @@
                         
                         <td>
                             <div class="title">
-                                <a>Embedding Spatio-temporal Information into Maps by Route-Zooming</a>
+                                Embedding Spatio-temporal Information into Maps by Route-Zooming
                             </div>
 
                             <div class="author">
@@ -204,7 +218,7 @@
                         
                         <td>
                             <div class="title">
-                                <a>Looking into saliency model via space-time visualization</a>
+                                Looking into saliency model via space-time visualization
                             </div>
 
                             <div class="author">
@@ -227,7 +241,7 @@
                         
                         <td>
                             <div class="title">
-                                <a>TravelDiff: Visual Comparison Analytics for Massive Movement Patterns Derived from Twitter</a>
+                               TravelDiff: Visual Comparison Analytics for Massive Movement Patterns Derived from Twitter
                             </div>
 
                             <div class="author">
@@ -252,7 +266,7 @@
 
                         <td>
                             <div class="title">
-                                <a>EvoRiver: Visual Analysis of Topic Coopetition on Social Media</a>
+                                EvoRiver: Visual Analysis of Topic Coopetition on Social Media
                             </div>
 
                             <div class="author">
@@ -276,9 +290,9 @@
 
                         <td>
                             <div class="title">
-                                <a>Embedding Temporal Display into Maps for
+                                Embedding Temporal Display into Maps for
                                 Occlusion-Free Visualization of Spatio-temporal
-                                Data</a>
+                                Data
                             </div>
 
                             <div class="author">
@@ -302,9 +316,9 @@
 
                         <td>
                             <div class="title">
-                                <a>A Survey of Visual Analytics Techniques and
+                                A Survey of Visual Analytics Techniques and
                                 Applications: State-of-the-Art Research and
-                                Future Challenges</a>
+                                Future Challenges
                             </div>
 
                             <div class="author">
@@ -329,8 +343,8 @@
 
                         <td>
                             <div class="title">
-                                <a>A Web-based Visual Analytics System for Real
-                                Estate Data</a>
+                                A Web-based Visual Analytics System for Real
+                                Estate Data
                             </div>
 
                             <div class="author">
@@ -355,8 +369,8 @@
 
                         <td>
                             <div class="title">
-                                <a>Survey on Feature Enhanced Volume
-                                Visualization</a>
+                                Survey on Feature Enhanced Volume
+                                Visualization
                             </div>
 
                             <div class="author">
