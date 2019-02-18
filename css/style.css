@@ -49,13 +49,13 @@
     height: auto;
     }
 
-    .category2{
+    .category_language{
     margin-bottom: 0px;
     margin-top:0px;
     margin-left: -2px;
     margin-right: -2px;
     padding:9px 3px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight:600;
     color: #9ed5e3;
     line-height: 1.42857143;
@@ -128,5 +128,8 @@
 }
 
 .alanguage{
-      text-decoration:none;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9f6c6c;
 }
