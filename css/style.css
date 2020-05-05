@@ -88,7 +88,7 @@
         
 .title{
 	text-align: left;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 /* 	color: #FFFF00; */
 	border: none;
@@ -99,7 +99,7 @@
 .author{
 	margin-bottom: 5px;
 	text-align: left;
-	font-size: 16px;
+	font-size: 19px;
 /* 	font-weight: bold; */
 /* 	color: #FFFF00; */
 	color: gray;
@@ -111,7 +111,7 @@
 	
 	margin-bottom: 5px;
 	text-align: left;
-	font-size: 16px;
+	font-size: 18px;
 /* 	font-weight: bold; */
 /* 	color: #FFFF00; */
 	border: none;
@@ -132,4 +132,9 @@
     font-size: 20px;
     font-weight: bold;
     color: #9f6c6c;
+}
+
+.ul-professional-activities li{
+
+    margin-bottom: 8px;
 }
