@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="baidu-site-verification" content="n9e1o5SPct" />
+    <meta name="baidu-site-verification" content="62m2ySWEMQ" />
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta charset="utf-8">
+    <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js" type= "text/javascript"> -->
+
+    <script type="text/javascript">
+           var preUrl = document.referrer;
+           if(preUrl != null){
+                if(preUrl.indexOf("baidu") != -1 || preUrl.indexOf("zjut.edu") != -1 || preUrl.indexOf("zjutvis") != -1 || preUrl.indexOf("sogou") != -1 || preUrl.indexOf("csdn") != -1)
+                    window.location.href="https://godoorsun.org/cn.html";
+           }
+     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type= "text/javascript">
+</script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Guodao Sun | 孙国道 | Homepage | 主页</title>
+    <script type="text/javascript"> 
+    var offset = -50;
+    $(document).ready(function() {
+
+        //$.get("hosted-codingnet.html", function(data){
+        //    $("#filename").html(data);
+        //});
+
+    }); 
+
+    function disableHighlight(){
+    $('.category').removeClass('highlightedCategory'); 
+    }
+
+    function onHover()
+    {
+        //$("#myself").attr('src', 'assets/homepage_images/guodao4.jpg');
+        //$("#myself").attr('width', '220px');
+        //$("#myself").attr('height', '283px');
+        //1.54
+    }
+
+    function offHover()
+    {
+        //$("#myself").attr('src', 'assets/homepage_images/guodao.png');
+       // $("#myself").attr('width', '220px');
+        //$("#myself").attr('height', '283px');
+    }
+
+    </script>
+</head>
+
+<body> 
+	    <div class="navbar">
+
+	        <div class="nav-item nav-item-home category highlightedCategory"
+	        onclick=
+	        "disableHighlight(); $('.nav-item-home').addClass('highlightedCategory');document.getElementById('bio').scrollIntoView(); scrollBy(0, offset);">
+	        About
+	        </div><!--
+	        <div class="nav-item nav-item-research category" onclick=
+    	        "disableHighlight(); $('.nav-item-research').addClass('highlightedCategory'); window.location.href='Research.htm'">
+    	        Research
+	        </div>
+	        -->
+
+	        <div class="nav-item category nav-item-pub " onclick=
+	        "disableHighlight(); $('.nav-item-pub').addClass('highlightedCategory'); document.getElementById('publication').scrollIntoView(); scrollBy(0, offset);">
+	        Publications
+	        </div>
+
+	        <div class="nav-item category nav-item-cv" onclick=
+	        "disableHighlight(); $('.nav-item-cv').addClass('highlightedCategory'); document.getElementById('service').scrollIntoView(); scrollBy(0, offset);">
+	        Service
+	        </div>
+	 
+            <!--
+	        <div class="nav-item category nav-item-Misc" onclick=
+	        "disableHighlight(); $('.nav-item-Misc').addClass('highlightedCategory'); window.location.href='misc.html'">
+	        Misc
+	        </div>
+            -->
+
+	    </div>
+
+    <div class="content-wrapper">
+        <div>
+
+
+            <a class = "alanguage" href="cn.html" > 
+                    中文
+            </a>
+             
+            <div class="nav-item category_language"   >
+                |
+            </div> 
+            <a  class = "alanguage"  href="index.html"> 
+                English
+            </a>
+
+            <div style="font-size:20px; text-align:left">
+                Guodao Sun（孙国道） guodao [at] zjut.edu.cn, Pingfeng Campus, Zhejiang University of Technology, Hangzhou
+            </div>
+        </div>
+
+        <div class="portrait">
+        <img id="myself" src="assets/homepage_images/guodao.png" width="220px"  height="283px"    onmouseover="onHover();" onmouseout="offHover();" >
+        <img src="assets/homepage_images/vis_of_my_papers.jpg" width="748px"
+        height="322px" style="margin-top:1px" alt="Word cloud of my papers until 2014" title="Word cloud of my papers until 2014" >
+        </div>
+        <div class="bio">
+            <div id="bio" style="font-size:28px;">
+                <h4 class = "item"  >Bio:</h4>
+            </div>
+            <div style="line-height: 32px; font-size:20px; -webkit-font-smoothing: antialiased;">
+                I'm currently an associate professor at College of Computer Science and Technology, Zhejiang University of Technology, Hangzhou, China. 
+                I received B.Sc. in computer science and technology (2010), and Ph.D. degree in January, 2016 under the supervision of Ronghua Liang.
+                During my Ph.D study, I studied and worked as a visiting
+                intern at Department of Computer Science and Engineering,
+                Hong Kong University of Science and
+                Technology under Prof. <a href=
+                "http://www.huamin.org">Huamin Qu</a>'s supervision from February 2013 to
+                July 2013, a research intern at Internet Graphics Group,
+                Microsoft
+                Research Asia with <a href= "http://www.ycwu.org">Yingcai Wu</a> from July 2013 to January 2015,
+                and a visiting intern at The Institute for Visualization and Interactive Systems headed by <a href="http://www.vis.uni-stuttgart.de/en/institute/people/thomas-ertl.html">Thomas Ertl</a> at the University of Stuttgart from July 2015 to December 2015.
+                At present, I'm interested in exploring large data using interactive visual analytics with focus on data such as urban data (vehicles, human movement, environment etc.), social data (social media, social network etc.), video data (associated with computer vision).
+            </div>
+
+<!--
+            <div style="font-size:20px; -webkit-font-smoothing: antialiased;">
+		   孙国道，浙江工业大学信息工程学院校聘副教授。2016年获工学博士学位，博士求学期间前往香港科技大学(2013.02-2013.07)、微软亚洲研究院(2013.07-2015.01)、德国斯图加特大学(2015.07-2015.12)等高校和研究机构展开访问和交流，曾获得微软亚洲研究院“明日之星”等称号。从事大数据挖掘、可视化和可视分析方面的研究，在可视化领域相关期刊和会议发表论文20余篇，包括IEEE TVCG、IEEE VIS、IEEE TMM、ACM TIST等，并担任IEEE Pacific VIS、VINCI、ChinaVis等国际学术会议的程序委员会委员和多个国内外著名期刊和会议的审稿人，主持国家自然科学基金等项目。
+            </div>
+-->
+
+
+
+
+            <div id="publication" style="font-size:28px;">
+                <h4 class = "item">Selected Publications:</h4>
+                <table align="center" cellspacing="50">
+
+                    <!--  paper module-->
+
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/muse.jpg" width="270" height=
+                        "165"></td>                        
+                        <td>
+                            <div class="title">
+                                 MUSE: Visual Analysis of Musical Semantic Sequence
+                            </div>
+
+                            <div class="author">
+                                 Baofeng Chang, <b>Guodao Sun*</b>, Tong Li, Houchao Huang, Ronghua Liang
+                            </div>
+                            <div class="venue">
+                                IEEE Transactions on Visualization and Computer Graphics, to appear, 2022
+                            </div>
+                            <div>
+                                 <a href="https://ieeexplore.ieee.org/document/9781257//"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="xxxx.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/evosets.jpg" width="270" height=
+                        "165"></td>                        
+                        <td>
+                            <div class="title">
+                                 EvoSets: Tracking the Sensitivity of Dimensionality Reduction Results Across Subspaces
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Sujia Zhu, Qi Jiang, Wang Xia, Ronghua Liang
+                            </div>
+                            <div class="venue">
+                                IEEE Transactions on Big Data, to appear, 2021
+                            </div>
+                            <div>
+                                 <a href="https://ieeexplore.ieee.org/abstract/document/9428524/"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="xxxx.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    
+                    <tr>
+                        <td><img src="assets/homepage_images/acmtist-vsumvis.jpg" width="270" height=
+                        "165"></td>                        
+                        <td>
+                            <div class="title">
+                                 VSumVis: Interactive Visual Understanding and Diagnosis of Video Summarization Model
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Hao Wu, Lin Zhu, Chaoqing Xu, Haoran Liang, Binwei Xu, Ronghua Liang
+                            </div>
+                            <div class="venue">
+                                ACM Transactions on Intelligent Systems and Technology, to appear, 2021
+                            </div>
+                            <div>
+                                 <a href="https://dl.acm.org/doi/10.1145/3458928"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="xxxx.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/auto-inforgraphics.jpg" width="270" height=
+                        "165"></td>                        
+                        <td>
+                            <div class="title">
+                                 A Survey on Automatic Infographics and Visualization Recommendations
+                               
+                            </div>
+
+                            <div class="author">
+                                Sujia Zhu, <b>Guodao Sun*</b>, Qi Jiang, Meng Zha, Ronghua Liang
+                            </div>
+
+                            <div class="venue">
+                                Visual Informatics, 4(3):24–40, 2020
+                            </div>
+                            <div>
+                                 <a href="papers/auto-inforgraphics-vis-recommend.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/auto-inforgraphics-vis-recommend.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/permvizor.png" width="250" height=
+                        "150"></td>
+                        
+                        <td>
+                            <div class="title">
+                                PermVizor: Visual Analysis of Multivariate Permutations <br> 
+                                <div style="color: #0154aade; font-weight:bold;"> (ChinaVis 2019 Best Paper Honorable Mention)  </div>
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Zhixiu Zhou, Baofeng Chang, Jingwei Tang, Ronghua Liang
+                            </div>
+
+                            <div class="venue">
+                                Journal of Visualization, 22(6):1225–1240, 2019
+                            </div>
+                            <div>
+                                 <a href="https://link.springer.com/article/10.1007/s12650-019-00599-w"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/xxxx.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/tzvis.png" width="250" height=
+                        "150"></td>
+                        
+                        <td>
+                            <div class="title">
+                                TZVis: Visual Analysis of Bicycle Data for Traffic Zone Division
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Baofeng Chang, Lin Zhu, Hao Wu, Kai Zheng, Ronghua Liang
+                            </div>
+
+                            <div class="venue">
+                                Journal of Visualization, 22(6):1193–1208, 2019
+                            </div>
+                            <div>
+                                 <a href="https://link.springer.com/article/10.1007/s12650-019-00600-6"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/xxx.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/acmtist.png" width="250" height=
+                        "150"></td>
+                        
+                        <td>
+                            <div class="title">
+                                SocialWave: Visual Analysis of Spatio-temporal Diffusion of Information on Social Media
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Tan Tang, Tai-Quan Peng, Ronghua Liang, Yingcai Wu
+                            </div>
+
+                            <div class="venue">
+                                ACM Transactions on Intelligent Systems and Technology, 9(2):1–23, 2017
+                            </div>
+                            <div>
+                                 <a href="papers/socialwave acm tist.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/socialwave acm tist.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="assets/homepage_images/streamexplorer.jpg" width="250" height=
+                        "150"></td>
+                        
+                        <td>
+                            <div class="title">
+                                StreamExplorer: A Multi-Stage System for Visually Exploring Events in Social Streams
+                            </div>
+
+                            <div class="author">
+                                Yingcai Wu, Zhutian Chen, <b>Guodao Sun</b>, Xiao Xie, Nan Cao, Shixia Liu, Weiwei Cui
+                            </div>
+
+                            <div class="venue">
+                                IEEE Transactions on Visualization and Computer Graphics, 24(10):2758–2772, 2018 (<span style="color: #0154aade; font-weight:bold;">CCF-A</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/streamexplorer.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/streamexplorer.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+ 
+                    <tr>
+                        <td><img src="assets/homepage_images/route-zooming.png" width="230" height=
+                        "150"></td>
+                        
+                        <td>
+                            <div class="title">
+                                Embedding Spatio-temporal Information into Maps by Route-Zooming
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Ronghua Liang, Huamin Qu, and Yingcai Wu
+                            </div>
+
+                            <div class="venue">
+                                IEEE Transactions on Visualization and Computer Graphics, 23(5):1506-1519, 2017 (<span style="color: #0154aade; font-weight:bold;">CCF-A</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/TVCG Embedding Spatio-Temporal Information into Maps by Route-Zooming tvcg.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/tvcg embed.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+ 
+                    <tr>
+                        <td><img src="assets/homepage_images/tmm.png" width="230" height=
+                        "150"></td>
+                        
+                        <td>
+                            <div class="title">
+                                Looking into saliency model via space-time visualization
+                            </div>
+
+                            <div class="author">
+                                Haoran Liang, Ronghua Liang, and <b>Guodao Sun</b>
+                            </div>
+
+                            <div class="venue">
+                                IEEE Transactions on Multimedia, 18(11):2271-2281, 2016 (<span style="color: #0154aade; font-weight:bold;">CCF-B</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/tmm Looking Into Saliency Model via Space-Time Visualization.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/tmm.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="assets/homepage_images/travel_diff.png" width="230" height=
+                        "140"></td>
+                        
+                        <td>
+                            <div class="title">
+                               TravelDiff: Visual Comparison Analytics for Massive Movement Patterns Derived from Twitter
+                            </div>
+
+                            <div class="author">
+                                Robert Krüger, <b>Guodao Sun</b>, Fabian Beck, Ranghua Liang, and Thomas Ertl
+                            </div>
+
+                            <div class="venue">
+                                IEEE Pacific Visualization Symposium, pages 176–183, 2016 (<span style="color: #0154aade; font-weight:bold;">CCF-C</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/TravelDiff_cameraReady_pacificVis16.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/TravelDiff.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td><img src="assets/homepage_images/coop.jpg" width="230" height=
+                        "150"></td>
+
+                        <td>
+                            <div class="title">
+                                EvoRiver: Visual Analysis of Topic Coopetition on Social Media
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Yingcai Wu, Shixia Liu, Tai-Quan Peng,
+                                Jonathan JH Zhu, and Ronghua Liang
+                            </div>
+
+                            <div class="venue">
+                                IEEE Transactions on Visualization and Computer Graphics, 20(12):1753-1762, 2014 (<span style="color: #0154aade; font-weight:bold;">CCF-A</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/vis2014 tvcg evoriver.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/vis2014 tvcg evoriver.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="assets/homepage_images/embed2.jpg" width="230" height=
+                        "150"></td>
+
+                        <td>
+                            <div class="title">
+                                Embedding Temporal Display into Maps for
+                                Occlusion-Free Visualization of Spatio-temporal
+                                Data
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Yang Liu, Wenbin Wu, Ronghua
+                                Liang, and Huamin Qu
+                            </div>
+
+                            <div class="venue">
+                                IEEE Pacific Visualization Symposium, pages 185-192, 2014  (<span style="color: #0154aade; font-weight:bold;">CCF-C</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/pvis embed.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/pvis embed.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="assets/homepage_images/vasurvey.jpg" width="230" height=
+                        "150"></td>
+
+                        <td>
+                            <div class="title">
+                                A Survey of Visual Analytics Techniques and
+                                Applications: State-of-the-Art Research and
+                                Future Challenges
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Yingcai Wu, Ronghua Liang,
+                                and Shixia Liu
+                            </div>
+
+                            <div class="venue">
+                                Journal of Computer Science and Technology,
+                                28(5):852-867, 2013 (<span style="color: #0154aade; font-weight:bold;">CCF-B</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/jcst vast survey  paper.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/jcst vast survey  paper.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="assets/homepage_images/realestate.jpg" width="230"
+                        height="150"></td>
+
+                        <td>
+                            <div class="title">
+                                A Web-based Visual Analytics System for Real
+                                Estate Data
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Ronghua Liang, Fuli Wu, and
+                                Huamin Qu
+                            </div>
+
+                            <div class="venue">
+                                SCIENCE CHINA Information Sciences, 56(5):1-13,
+                                2013 (<span style="color: #0154aade; font-weight:bold;">CCF-B</span>)
+                            </div>
+                            <div>
+                                 <a href="papers/science china.pdf"> <img src="assets/homepage_images/pdf.png" width="35" height="35"></a>
+                                 <a href="papers/science china.bib"><img src="assets/homepage_images/bibtex.jpg" width="35" height="35"></a>
+                            </div>
+                        </td>
+                    </tr>
+
+					<!--
+                    <tr>
+                        <td><img src="assets/homepage_images/featureenhance.jpg" width="230"
+                        height="130"></td>
+
+                        <td>
+                            <div class="title">
+                                Survey on Feature Enhanced Volume
+                                Visualization
+                            </div>
+
+                            <div class="author">
+                                <b>Guodao Sun</b>, Weiming Li, Wenjie Sun,
+                                Xiangyin Ma, and Ronghua Liang
+                            </div>
+
+                            <div class="venue">
+                                Journal of Computer Aided Design＆ Computer
+                                Graphics, 25(11):1606-1613, 2013
+                            </div> 
+                        </td>
+                    </tr>
+                    -->
+                </table>
+            </div>
+            
+            
+           <div id="service" style="font-size:28px;">
+                <h4  class = "item" >Professional Activities:</h4>
+                <div style="font-size:20px;">
+                    <ul style="margin-left:35px">
+                        
+                        <li>
+                            FastForward Chair for <a href = "http://chinavis.org"> ChinaVis 2017-2020</a>
+                        </li>
+
+                        <li>
+                            Program Committee for <a href = "http://ieeevis.org"> IEEE VIS 2019, 2020</a> (Short Paper)
+                        </li>
+
+                        <li>
+                            Program Committee for <a href = "http://itolab.is.ocha.ac.jp/pvis2018/"> PacificVis 2018</a>
+                        </li>
+                        <li>
+                            Program Committee for <a href="http://pacificvis.snu.ac.kr/">PacificVis 2017</a>
+                        </li>
+
+                        <li>
+                            Program Committee for 
+                             <a href="http://vinci-conf.org/2014/"> VINCI'14</a>, <a href="http://vinci-conf.org/"> VINCI'15</a>, and <a href="http://chinavis.org">ChinaVis </a>
+                        </li>
+
+                        <li>
+                            Reviewers for various journals (e.g. IEEE TVCG/TMM, ACM TIST/TiiS, JOV, JVLC) and conferences (e.g., IEEE Vis, IEEE PacificVis, VINCI, ChinaVis).
+                        </li>
+
+                        <div style="margin-bottom:18px"> </div>
+
+                        <li>
+                            Invited talk at ChinaVis, <a href = "https://ChinaVis">Visual Analysis of Spatio-temporal Data</a>, 2019/07
+                        </li>
+
+                        <li>
+                            NII Shonan Meeting, <a href = "https://shonan.nii.ac.jp/seminars/120/"> Visual Analytics:Towards Effective Human-Machine Intelligence</a>, 2018/01
+                        </li>
+
+                        <li>
+                            Invited talk at East China Normal University, Visual analysis of social media data, Shanghai, China, 2017/11                     
+                        </li>
+
+                        <li>
+                            Invited talk at Zhejiang University, <a href="http://www.cad.zju.edu.cn/home/2017vis/">Visual analysis of urban data</a>, Hangzhou, China, 2017/07                     
+                        </li>
+
+                        <li>
+                            ACM SIGGRAPH Asia (IEEE TVCG Invited Session on Visualization), <a href = "https://sa2016.siggraph.org/"> Embedding Spatio-temporal Information into Maps by Route-Zooming</a>, 2016/11
+                        </li>
+
+                        <li>
+                            Invited talk at ChinaVis, <a href="http://chinavis.org/2017/panel.html">Panel: The growth of young visualization scholars</a>, 2017/07
+                        </li>                
+                    </ul>
+                </div>
+        	</div>
+    </div>
+    <div style="height: 20px;">
+    </div>
+    
+    <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9903746; 
+var sc_invisible=0; 
+var sc_security="028fc097"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9903746/0/028fc097/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<!--
+<p style="float:right">Hosted by <a href="https://pages.coding.me" style="right font-weight: bold">Coding Pages</a></p>
+ -->
+</body>
+</html> 
+   
